@@ -1,0 +1,516 @@
+import React, { useEffect, useRef, useState } from "react";
+import weddingMain from "../assets/ring-detail/wedding-main.png";
+import starIcon from "../assets/icons/star.svg";
+import { fetchJson } from "../lib/api";
+import { productImageUrl } from "../lib/productImage";
+
+const InquiryModal = ({ inquiryState, setInquiryState }) => {
+  const { isOpen, type, product } = inquiryState || {
+    isOpen: false,
+    type: null,
+    product: null,
+  };
+
+  const [selectedMetal, setSelectedMetal] = useState("Silver");
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailNotice, setEmailNotice] = useState(null);
+
+  const categoryRef = useRef(null);
+
+  const categories = [
+    "Rings",
+    "Earrings",
+    "Bracelet",
+    "Necklace",
+    "Mangalsutras",
+    "Pendants",
+    "Chains",
+    "Jewellery set",
+  ];
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (categoryRef.current && !categoryRef.current.contains(event.target)) {
+        setIsCategoryOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const closeModal = () => {
+    setInquiryState({
+      isOpen: false,
+      type: null,
+    });
+
+    setIsCategoryOpen(false);
+    setEmailNotice(null);
+  };
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategories((prev) => {
+      if (prev.includes(category)) {
+        return prev.filter((item) => item !== category);
+      }
+
+      return [...prev, category];
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+    const inquiryData = {
+      type,
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+      metal: type === "general" ? selectedMetal : (product?.selectedMetal || null),
+      categories: type === "general" ? selectedCategories : null,
+      productId: product?.id || null,
+    };
+
+    try {
+      const result = await fetchJson("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(inquiryData),
+      });
+
+      setEmailNotice(
+        result.emailSent === false
+          ? "Your inquiry was saved. We could not send a confirmation email right now; our team will still follow up."
+          : null,
+      );
+      setInquiryState({ isOpen: true, type: "success" });
+    } catch (error) {
+      console.error("Error submitting inquiry:", error);
+      alert("Failed to submit inquiry. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const getCategoryText = () => {
+    if (selectedCategories.length === 0) {
+      return "Select Category";
+    }
+
+    if (selectedCategories.length === 1) {
+      return selectedCategories[0];
+    }
+
+    return `${selectedCategories.length} Categories Selected`;
+  };
+
+  return (
+    <div
+      className={`fixed inset-0 z-[9999] ${
+        isOpen ? "pointer-events-auto" : "pointer-events-none"
+      }`}
+    >
+      <div
+        className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
+          isOpen ? "visible opacity-100" : "invisible opacity-0"
+        }`}
+        onClick={closeModal}
+      ></div>
+
+      <div
+        className={`absolute right-0 top-0 h-full transform overflow-y-auto bg-white transition-transform duration-300 xl:w-[520px] lg:w-[485px] max-w-full w-[445px] ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="relative flex min-h-full flex-col lg:p-8 p-6">
+          <button
+            type="button"
+            onClick={closeModal}
+            className="absolute right-8 top-8 cursor-pointer text-[#1A1A1A] transition-opacity hover:opacity-70 p-2"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L15 15M15 1L1 15"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
+          <h2 className="xl:mb-10 lg:mb-6 mb-3 font-bellefair text-[32px] uppercase tracking-wide text-[#12798C]">
+            INQUIRY
+          </h2>
+
+          {type === "success" && (
+            <div className="-mt-20 flex flex-1 flex-col items-center justify-center text-center">
+              <h3 className="mb-2 text-[20px] font-medium text-[#1A1A1A]">
+                Thank you for your request.
+              </h3>
+
+              <p className="mb-16 text-[14px] font-light text-[#1A1A1A]">
+                We truly value your contribution and will review it promptly.
+                <br />
+                You can expect to hear back from us within 48 hours.
+              </p>
+
+              {emailNotice && (
+                <p className="mb-8 max-w-md text-[13px] text-[#7A7A7A]">
+                  {emailNotice}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={closeModal}
+                className="absolute bottom-8 left-8 mt-auto w-[calc(100%-64px)] cursor-pointer bg-[#1A1A1A] py-4 text-[16px] font-medium text-white transition-colors hover:bg-[#12798C]"
+              >
+                Continue
+              </button>
+            </div>
+          )}
+        
+          {type === "general" && (
+            <form onSubmit={handleSubmit} className="flex flex-1 flex-col">              
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                className="lg:mb-8 mb-6 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+              <div className="mb-6">
+                <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
+                  Metal:{" "}
+                  <span className="font-light text-[#7A7A7A]">
+                    {selectedMetal}
+                  </span>
+                </p>
+                <div className="flex gap-4">
+                  <button
+                    type="button"
+                    aria-label="Silver"
+                    onClick={() => setSelectedMetal("Silver")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F1F1F1] transition-all duration-200 ${
+                      selectedMetal === "Silver"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
+                  />
+                  <button
+                    type="button"
+                    aria-label="Gold"
+                    onClick={() => setSelectedMetal("Gold")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#E5D2A0] transition-all duration-200 ${
+                      selectedMetal === "Gold"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
+                  />
+                  <button
+                    type="button"
+                    aria-label="Rose Gold"
+                    onClick={() => setSelectedMetal("Rose Gold")}
+                    className={`h-6 w-6 cursor-pointer rounded-full bg-[#F3CDB8] transition-all duration-200 ${
+                      selectedMetal === "Rose Gold"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
+                  />
+                  <button
+                    type="button"
+                    aria-label="Platinum"
+                    onClick={() => setSelectedMetal("Platinum")}
+                    className={`h-6 w-6 cursor-pointer rounded-full border border-[#D0D5DD] bg-[#E9ECEC] transition-all duration-200 ${
+                      selectedMetal === "Platinum"
+                        ? "ring-1 ring-[#000000] ring-offset-1"
+                        : ""
+                    }`}
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6" ref={categoryRef}>
+                <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
+                  Product Category
+                </p>
+
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setIsCategoryOpen((prev) => !prev)}
+                    className={`flex h-[48px] w-full cursor-pointer items-center justify-between border bg-white px-4 text-left text-[14px] transition-colors focus:outline-none ${
+                      isCategoryOpen ? "border-[#12798C]" : "border-[#E5E5E5]"
+                    }`}
+                  >
+                    <span
+                      className={
+                        selectedCategories.length > 0
+                          ? "text-[#1A1A1A]"
+                          : "text-[#7A7A7A]"
+                      }
+                    >
+                      {getCategoryText()}
+                    </span>
+
+                    <svg
+                      width="12"
+                      height="7"
+                      viewBox="0 0 12 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`transition-transform duration-200 ${
+                        isCategoryOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      <path
+                        d="M1 1L6 6L11 1"
+                        stroke="#3D3D3D"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  {isCategoryOpen && (
+                    <div
+                      className="
+                        absolute
+                        left-0
+                        top-[56px]
+                        z-50
+                        w-full
+                        overflow-y-auto
+                        border
+                        border-[#F0F0F0]
+                        bg-white
+                        shadow-[0_8px_24px_rgba(0,0,0,0.08)]
+                        max-h-[390px]
+                      "
+                    >
+                      {categories.map((category) => {
+                        const isSelected =
+                          selectedCategories.includes(category);
+
+                        return (
+                          <label
+                            key={category}
+                            className="
+                              flex
+                              cursor-pointer
+                              items-center
+                              gap-3
+                              px-4
+                              py-3.5
+                              transition-colors
+                              hover:bg-[#F8FAFA]
+                            "
+                          >
+                            <input
+                              type="checkbox"
+                              checked={isSelected}
+                              onChange={() => handleCategoryChange(category)}
+                              className="sr-only"
+                            />
+
+                            <span
+                              className={`
+                                relative
+                                flex
+                                h-[22px]
+                                w-[22px]
+                                flex-shrink-0
+                                items-center
+                                justify-center
+                                rounded-[4px]
+                                border
+                                transition-all
+                                duration-200
+                                ${
+                                  isSelected
+                                    ? "border-[#12798C] bg-[#12798C]"
+                                    : "border-[#1A1A1A] bg-white"
+                                }
+                              `}
+                            >
+                              {isSelected && (
+                                <svg
+                                  width="13"
+                                  height="10"
+                                  viewBox="0 0 13 10"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M1 5L4.5 8.5L12 1"
+                                    stroke="white"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </svg>
+                              )}
+                            </span>
+                            <span
+                              className={`text-[15px] transition-colors ${
+                                isSelected ? "text-[#12798C]" : "text-[#4A4A4A]"
+                              }`}
+                            >
+                              {category}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              <div className="lg:mb-8 mb-6">
+                <p className="mb-3 text-[15px] font-medium text-[#1A1A1A]">
+                  Customer Inquiry
+                </p>
+
+                <textarea
+                  name="message"
+                  placeholder="Your Queries"
+                  rows="5"
+                  className="w-full resize-none border border-[#E5E5E5] p-4 text-[14px] focus:border-[#12798C] focus:outline-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
+            </form>
+          )}
+
+          {/* ========================================
+              PRODUCT INQUIRY
+          ======================================== */}
+
+          {type === "product" && (
+            <form onSubmit={handleSubmit} className="flex flex-1 flex-col">
+              <div className="lg:mb-8 mb-6 flex flex-col sm:flex-row gap-4 md:gap-6">
+                <div className="2xl:h-[195px] md:h-[185px] h-[150px] 2xl:w-[195px] md:w-[185px] w-[150px] flex-shrink-0 bg-[#F5F5F5] mx-auto sm:mx-0">
+                  <img
+                    src={
+                      product?.images?.[0]?.imageUrl
+                        ? productImageUrl(product.images[0].imageUrl)
+                        : weddingMain
+                    }
+                    alt="Product"
+                    className="h-full w-full object-cover mix-blend-multiply"
+                  />
+                </div>
+
+                <div className="flex flex-col text-center sm:text-left justify-center">
+                  <h3 className="lg:mb-2 mb-1 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
+                    {product?.name || "Wedding Ring 18K"}
+                  </h3>
+
+                  <p className="text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
+                    Category:{" "}
+                    <span className="font-light text-[#7A7A7A]">
+                      {product?.category?.name || "Jewellery"}
+                    </span>
+                  </p>
+
+                  {product?.selectedMetal && (
+                    <p className="text-[13px] text-[#1A1A1A] 2xl:text-[16px] mt-1">
+                      Metal:{" "}
+                      <span className="font-semibold text-[#12798C]">
+                        {product.selectedMetal}
+                      </span>
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                className="mb-8 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              />
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="mt-auto w-full cursor-pointer bg-[#1A1A1A] lg:py-4 py-2 lg:text-[16px] text-[14px] font-medium text-white transition-colors hover:bg-[#12798C] disabled:bg-[#9C9C9C]"
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
+            </form>
+          )}
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default InquiryModal;   
