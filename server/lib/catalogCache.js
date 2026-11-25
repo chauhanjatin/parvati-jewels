@@ -186,48 +186,154 @@ async function getProducts({ category, subCategory } = {}) {
   return list;
 }
 
+function getFallbackProductBySlug(slug) {
+  try {
+    const jsonPath = path.join(__dirname, '..', 'data', 'products.json');
+    if (!fs.existsSync(jsonPath)) return null;
+    const jsonProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+    const p = jsonProducts.find((x) => x.slug === slug || String(x.id) === String(slug));
+    if (!p) return null;
+
+    const catSlug = p.category === 'pendants' ? 'pendant' : (p.category === 'necklaces' ? 'necklace' : p.category);
+    const catNameMap = {
+      ring: 'Rings',
+      rings: 'Rings',
+      earring: 'Earrings',
+      earrings: 'Earrings',
+      necklace: 'Necklaces',
+      necklaces: 'Necklaces',
+      bracelet: 'Bracelets',
+      bracelets: 'Bracelets',
+      pendant: 'Pendants',
+      pendants: 'Pendants',
+    };
+    const parentCategory = {
+      name: catNameMap[catSlug] || 'Jewelry',
+      slug: catSlug,
+    };
+
+    let categoryObj = parentCategory;
+    if (p.subCategory) {
+      const subName = p.subCategory
+        .split('-')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+      categoryObj = {
+        name: subName,
+        slug: p.subCategory,
+        parent: parentCategory,
+      };
+    }
+
+    const allImages = [];
+    if (p.image) {
+      allImages.push({
+        id: p.id * 10,
+        imageUrl: p.image.startsWith('..') ? p.image.replace('..', '') : p.image,
+        isPrimary: true,
+        sortOrder: 1,
+        altText: p.name,
+      });
+    }
+    if (Array.isArray(p.additionalImages)) {
+      p.additionalImages.forEach((img, idx) => {
+        allImages.push({
+          id: p.id * 10 + idx + 1,
+          imageUrl: img.startsWith('..') ? img.replace('..', '') : img,
+          isPrimary: false,
+          sortOrder: idx + 2,
+          altText: `${p.name} - ${idx + 2}`,
+        });
+      });
+    }
+
+    return {
+      id: p.id,
+      name: p.name,
+      slug: p.slug,
+      description: p.description || '',
+      shortDescription: p.shortDescription || '',
+      price: p.price || 0,
+      isBestseller: Boolean(p.isBestseller),
+      category: categoryObj,
+      images: allImages,
+      weightDetails: p.weightDetails || p.specifications?.weightDetails || null,
+      specifications: p.specifications || null,
+      variants: [
+        {
+          id: p.id,
+          price: p.price || 0,
+          specifications: p.specifications || (p.weightDetails ? { weightDetails: p.weightDetails } : null),
+        },
+      ],
+    };
+  } catch (err) {
+    console.error(`[Cache] getFallbackProductBySlug("${slug}") error:`, err.message);
+    return null;
+  }
+}
+
 async function getProductBySlug(slug) {
   if (productsBySlugCache.has(slug)) {
     return productsBySlugCache.get(slug);
   }
 
-  const product = await withDbRetry(() =>
-    prisma.product.findUnique({
-      where: { slug },
-      include: {
-        category: {
-          include: { parent: true },
-        },
-        images: {
-          orderBy: { sortOrder: 'asc' },
-        },
-        variants: true,
-      },
-    })
-  );
-
-  if (!product) return null;
-
-  let weightDetails = null;
-  if (product.variants?.[0]?.specifications) {
+  // Only query Prisma if DATABASE_URL is configured
+  if (process.env.DATABASE_URL) {
     try {
-      const specs =
-        typeof product.variants[0].specifications === 'string'
-          ? JSON.parse(product.variants[0].specifications)
-          : product.variants[0].specifications;
-      weightDetails = specs.weightDetails || null;
-    } catch (e) {
-      // ignore
+      const product = await withDbRetry(
+        () =>
+          prisma.product.findUnique({
+            where: { slug },
+            include: {
+              category: {
+                include: { parent: true },
+              },
+              images: {
+                orderBy: { sortOrder: 'asc' },
+              },
+              variants: true,
+            },
+          }),
+        1,
+        200
+      );
+
+      if (product) {
+        let weightDetails = null;
+        if (product.variants?.[0]?.specifications) {
+          try {
+            const specs =
+              typeof product.variants[0].specifications === 'string'
+                ? JSON.parse(product.variants[0].specifications)
+                : product.variants[0].specifications;
+            weightDetails = specs.weightDetails || null;
+          } catch (e) {
+            // ignore
+          }
+        }
+
+        const detailedProduct = {
+          ...product,
+          weightDetails,
+        };
+
+        productsBySlugCache.set(slug, detailedProduct);
+        return detailedProduct;
+      }
+    } catch (dbErr) {
+      console.warn(`[Cache] Database query failed for slug "${slug}":`, dbErr.message);
     }
   }
 
-  const detailedProduct = {
-    ...product,
-    weightDetails,
-  };
+  // Fallback to products.json if DB is not configured, unreachable, or product was not found in DB
+  const fallbackProduct = getFallbackProductBySlug(slug);
+  if (fallbackProduct) {
+    productsBySlugCache.set(slug, fallbackProduct);
+    return fallbackProduct;
+  }
 
-  productsBySlugCache.set(slug, detailedProduct);
-  return detailedProduct;
+  return null;
 }
 
 function invalidateCache() {
