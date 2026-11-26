@@ -441,12 +441,17 @@ function Productdetails({ setInquiryState }) {
                         Product Information:
                       </h4>
                       <div className="space-y-2 text-[14px] 2xl:text-[15px]">
-                        {prodInfoEntries.map(([key, val]) => (
-                          <div key={key} className="text-[#1A1A1A]">
-                            <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
-                            <span className="text-[#333333]">{val}</span>
-                          </div>
-                        ))}
+                        {prodInfoEntries.map(([key, val]) => {
+                          const isTotalWeight = key.toLowerCase().includes("total weight");
+                          return (
+                            <div key={key} className="text-[#1A1A1A]">
+                              <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
+                              <span className={isTotalWeight ? "font-bold text-[#1A1A1A]" : "text-[#333333]"}>
+                                {val}
+                              </span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
@@ -458,12 +463,17 @@ function Productdetails({ setInquiryState }) {
                         Accent stones:
                       </h4>
                       <div className="space-y-2 text-[14px] 2xl:text-[15px]">
-                        {accentEntries.map(([key, val]) => (
-                          <div key={key} className="text-[#1A1A1A]">
-                            <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
-                            <span className="text-[#333333]">{val}</span>
-                          </div>
-                        ))}
+                        {accentEntries.map(([key, val]) => {
+                          const isTotalWeight = key.toLowerCase().includes("total weight");
+                          return (
+                            <div key={key} className="text-[#1A1A1A]">
+                              <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
+                              <span className={isTotalWeight ? "font-bold text-[#1A1A1A]" : "text-[#333333]"}>
+                                {val}
+                              </span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
