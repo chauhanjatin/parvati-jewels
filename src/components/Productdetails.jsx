@@ -134,30 +134,36 @@ function Productdetails({ setInquiryState }) {
       ? "Platinum (PT950)"
       : `${activeMetal.name} (${activeKarat.label.toLowerCase()})`;
 
-  // Assemble dynamic product information with reactive Metal value
+  // Assemble dynamic product information with reactive Metal value (excluding Product Name & Category)
+  const isExcludedKey = (k) => {
+    const lower = String(k).trim().toLowerCase();
+    return lower === "product name" || lower === "productname" || lower === "category";
+  };
+
   const rawProdInfo = productDetails?.productInformation || {};
   const prodInfoEntries = [];
-  let metalAdded = false;
 
   Object.entries(rawProdInfo).forEach(([key, val]) => {
-    if (key.toLowerCase() === "metal") {
+    if (isExcludedKey(key)) return;
+
+    const lowerKey = key.trim().toLowerCase();
+    if (lowerKey === "metal colour" || lowerKey === "metal color") {
+      const selectedMetalName =
+        selectedColor === "pt950" ? "Platinum" : activeMetal.name;
+      prodInfoEntries.push(["Metal Colour", selectedMetalName]);
+    } else if (lowerKey === "metal purity") {
+      prodInfoEntries.push(["Metal Purity", "14KT / 18KT"]);
+    } else if (lowerKey === "metal") {
       prodInfoEntries.push(["Metal", dynamicMetalValue]);
-      metalAdded = true;
     } else {
       prodInfoEntries.push([key, val]);
-      if (key.toLowerCase() === "setting" && !metalAdded) {
-        prodInfoEntries.push(["Metal", dynamicMetalValue]);
-        metalAdded = true;
-      }
     }
   });
 
-  if (!metalAdded && Object.keys(rawProdInfo).length > 0) {
-    prodInfoEntries.splice(1, 0, ["Metal", dynamicMetalValue]);
-  }
-
   const rawAccentStones = productDetails?.accentStones || {};
-  const accentEntries = Object.entries(rawAccentStones);
+  const accentEntries = Object.entries(rawAccentStones).filter(
+    ([k]) => !isExcludedKey(k)
+  );
 
   const parentCategory = product.category?.parent;
   const currentCategory = parentCategory || product.category;

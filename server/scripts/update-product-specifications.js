@@ -25,23 +25,24 @@ function buildDetails(product) {
   const slug = product.slug || '';
   const shape = detectStoneShape(name, slug);
 
-  // Special match for PJR 553 Marquise CS from Screenshot 2
+  // Exact match for PJR 553 Marquise CS as shown in user spreadsheet
   if (slug === 'pjr-553-marquise-cs' || slug.includes('553-marquise')) {
     return {
       productInformation: {
-        "Setting": "Prong Setting",
-        "Ring Style": "Three Stone",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
         "Main Stone": "Marquise Diamond",
         "Side Stones": "Baguette Diamonds",
-        "Band width": "2.00 mm",
-        "Band thickness": "1.60 mm",
+        "Setting Type": "Prong Setting",
+        "Ring Style": "Three Stone",
+        "Band Width": "2.0MM",
+        "Band Thickness": "1.6MM",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 0.70ct",
+        "Total Weight": "APPROX. 0.7CT",
         "Setting": "Prong Setting",
-        "Colour": "DE",
+        "Color": "DE",
         "Clarity": "VVS/VS"
       }
     };
@@ -51,19 +52,20 @@ function buildDetails(product) {
     if (sub === '3-stone-ring') {
       return {
         productInformation: {
-          "Setting": "Prong Setting",
-          "Ring Style": "Three Stone",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
           "Side Stones": "Baguette Diamonds",
-          "Band width": "2.00 mm",
-          "Band thickness": "1.60 mm",
+          "Setting Type": "Prong Setting",
+          "Ring Style": "Three Stone",
+          "Band Width": "2.0MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.70ct",
+          "Total Weight": "APPROX. 0.7CT",
           "Setting": "Prong Setting",
-          "Colour": "DE",
+          "Color": "DE",
           "Clarity": "VVS/VS"
         }
       };
@@ -71,19 +73,20 @@ function buildDetails(product) {
     if (sub === 'art-deco') {
       return {
         productInformation: {
-          "Setting": "Vintage Bezel & Prong",
-          "Ring Style": "Art Deco Vintage",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
-          "Side Stones": "Milgrain Accent Stones",
-          "Band width": "2.20 mm",
-          "Band thickness": "1.60 mm",
+          "Side Stones": "Milgrain Baguettes",
+          "Setting Type": "Vintage Bezel & Prong",
+          "Ring Style": "Art Deco Vintage",
+          "Band Width": "2.2MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish Milgrain"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.45ct",
+          "Total Weight": "APPROX. 0.45CT",
           "Setting": "Castle",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -91,19 +94,20 @@ function buildDetails(product) {
     if (sub === 'color-stone-ring') {
       return {
         productInformation: {
-          "Setting": "Prong Setting",
-          "Ring Style": "Color Stone Ring",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Gemstone / Diamond`,
           "Side Stones": "Baguette Diamonds",
-          "Band width": "2.00 mm",
-          "Band thickness": "1.60 mm",
+          "Setting Type": "Prong Setting",
+          "Ring Style": "Three Stone",
+          "Band Width": "2.0MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.65ct",
+          "Total Weight": "APPROX. 0.7CT",
           "Setting": "Prong Setting",
-          "Colour": "DE",
+          "Color": "DE",
           "Clarity": "VVS/VS"
         }
       };
@@ -111,18 +115,20 @@ function buildDetails(product) {
     if (sub === 'et') {
       return {
         productInformation: {
-          "Setting": "Shared Prong",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
+          "Main Stone": "Eternity Band Diamonds",
+          "Side Stones": "None",
+          "Setting Type": "Shared Prong",
           "Ring Style": "Eternity Band",
-          "Main Stone": "Full Band Diamonds",
-          "Band width": "2.80 mm",
-          "Band thickness": "1.80 mm",
+          "Band Width": "2.8MM",
+          "Band Thickness": "1.8MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 2.10ct",
+          "Total Weight": "APPROX. 2.1CT",
           "Setting": "Shared Prong",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -130,19 +136,20 @@ function buildDetails(product) {
     if (sub === 'halo-ring') {
       return {
         productInformation: {
-          "Setting": "Halo Prong Setting",
-          "Ring Style": "Halo Ring",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
           "Side Stones": "Halo Round Diamonds",
-          "Band width": "1.90 mm",
-          "Band thickness": "1.50 mm",
+          "Setting Type": "Halo Prong Setting",
+          "Ring Style": "Halo Ring",
+          "Band Width": "1.9MM",
+          "Band Thickness": "1.5MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.35ct",
+          "Total Weight": "APPROX. 0.35CT",
           "Setting": "Castle",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -150,18 +157,20 @@ function buildDetails(product) {
     if (sub === 'plain-solitaire-ring') {
       return {
         productInformation: {
-          "Setting": "Classic 4-Prong",
-          "Ring Style": "Plain Solitaire",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
-          "Band width": "2.00 mm",
-          "Band thickness": "1.60 mm",
+          "Side Stones": "None",
+          "Setting Type": "Classic 4-Prong",
+          "Ring Style": "Plain Solitaire",
+          "Band Width": "2.0MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.15ct",
+          "Total Weight": "APPROX. 0.15CT",
           "Setting": "Hidden Halo",
-          "Colour": "F-G",
+          "Color": "F-G",
           "Clarity": "VS"
         }
       };
@@ -169,19 +178,20 @@ function buildDetails(product) {
     if (sub === 'side-stone-ring') {
       return {
         productInformation: {
-          "Setting": "Side Stone Prong",
-          "Ring Style": "Side Stone Ring",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
           "Side Stones": "Pavé Side Diamonds",
-          "Band width": "2.10 mm",
-          "Band thickness": "1.60 mm",
+          "Setting Type": "Side Stone Prong",
+          "Ring Style": "Side Stone Ring",
+          "Band Width": "2.1MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.30ct",
+          "Total Weight": "APPROX. 0.30CT",
           "Setting": "Castle",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -189,18 +199,20 @@ function buildDetails(product) {
     if (sub === 'toi-moi-ring') {
       return {
         productInformation: {
-          "Setting": "Two-Stone Claw Prong",
-          "Ring Style": "Toi et Moi",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `Pear & ${shape} Diamonds`,
-          "Band width": "2.00 mm",
-          "Band thickness": "1.60 mm",
+          "Side Stones": "None",
+          "Setting Type": "Two-Stone Claw Prong",
+          "Ring Style": "Toi et Moi",
+          "Band Width": "2.0MM",
+          "Band Thickness": "1.6MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.85ct",
+          "Total Weight": "APPROX. 0.85CT",
           "Setting": "Prong Setting",
-          "Colour": "DE",
+          "Color": "DE",
           "Clarity": "VVS/VS"
         }
       };
@@ -208,20 +220,21 @@ function buildDetails(product) {
     // Generic ring default
     return {
       productInformation: {
-        "Setting": "Prong Setting",
-        "Ring Style": "Promise Ring",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
         "Main Stone": `${shape} Diamond`,
-        "Band width": "2.00 mm",
-        "Band thickness": "1.60 mm",
-        "Setting style": "Castle",
+        "Side Stones": "Baguette Diamonds",
+        "Setting Type": "Prong Setting",
+        "Ring Style": "Three Stone",
+        "Band Width": "2.0MM",
+        "Band Thickness": "1.6MM",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 0.25ct",
-        "Setting": "Castle",
-        "Colour": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 0.7CT",
+        "Setting": "Prong Setting",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     };
   }
@@ -230,17 +243,19 @@ function buildDetails(product) {
     if (sub === 'halo-earring') {
       return {
         productInformation: {
-          "Setting": "Halo Prong Basket",
-          "Earring Style": "Halo Earring",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
+          "Side Stones": "Halo Micro-Pavé Diamonds",
+          "Setting Type": "Halo Basket Setting",
+          "Earring Style": "Halo Earring",
           "Backing": "Secure Push Back",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.55ct",
+          "Total Weight": "APPROX. 0.55CT",
           "Setting": "Micro-Pavé",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -248,34 +263,38 @@ function buildDetails(product) {
     if (sub === 'hoop-earring') {
       return {
         productInformation: {
-          "Setting": "Channel & Prong",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
+          "Main Stone": "Hoop Set Diamonds",
+          "Side Stones": "Pavé Diamonds",
+          "Setting Type": "Channel & Prong",
           "Earring Style": "Hoop Earring",
-          "Diameter": "15.0 mm",
-          "Closure": "Snap Lock Hinge",
+          "Diameter": "15.0MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.80ct",
+          "Total Weight": "APPROX. 0.80CT",
           "Setting": "Shared Prong",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
     }
     return {
       productInformation: {
-        "Setting": "4-Prong Basket",
-        "Earring Style": "Solitaire Stud",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
         "Main Stone": `${shape} Diamond`,
+        "Side Stones": "None",
+        "Setting Type": "4-Prong Basket",
+        "Earring Style": "Solitaire Stud",
         "Backing": "Push Back with Safety Groove",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 1.00ct (Pair)",
+        "Total Weight": "APPROX. 1.00CT",
         "Setting": "Prong Setting",
-        "Colour": "F-G",
+        "Color": "F-G",
         "Clarity": "VS"
       }
     };
@@ -284,18 +303,20 @@ function buildDetails(product) {
   if (cat === 'bracelets') {
     return {
       productInformation: {
-        "Setting": "4-Prong Tennis Link",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
+        "Main Stone": "Tennis Link Diamonds",
+        "Side Stones": "None",
+        "Setting Type": "4-Prong Tennis Link",
         "Bracelet Style": "Tennis Bracelet",
+        "Band Width": "3.0MM",
         "Length": "7.0 Inches",
-        "Band width": "3.00 mm",
-        "Clasp": "Double Safety Box Clasp",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 3.20ct",
+        "Total Weight": "APPROX. 3.2CT",
         "Setting": "Prong Setting",
-        "Colour": "G",
+        "Color": "G",
         "Clarity": "VS"
       }
     };
@@ -304,17 +325,19 @@ function buildDetails(product) {
   if (cat === 'necklaces' || cat === 'necklace') {
     return {
       productInformation: {
-        "Setting": "Collar Link / Bezel",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
+        "Main Stone": "Line Set Diamonds",
+        "Side Stones": "None",
+        "Setting Type": "Collar Link / Bezel",
         "Necklace Style": "Diamond Line Necklace",
-        "Length": "16 - 18 Inches Adjustable",
-        "Clasp": "Box Clasp with Dual Safety",
+        "Length": "16 - 18 Inches",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 4.50ct",
+        "Total Weight": "APPROX. 4.5CT",
         "Setting": "Prong Setting",
-        "Colour": "G",
+        "Color": "G",
         "Clarity": "VS"
       }
     };
@@ -324,17 +347,19 @@ function buildDetails(product) {
     if (sub === 'cross-pendant') {
       return {
         productInformation: {
-          "Setting": "Cross Prong Setting",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
+          "Main Stone": "Cross Diamonds",
+          "Side Stones": "None",
+          "Setting Type": "Cross Prong Setting",
           "Pendant Style": "Cross Pendant",
-          "Pendant Height": "22.0 mm",
-          "Bail Opening": "3.50 mm",
+          "Pendant Height": "22.0MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.50ct",
+          "Total Weight": "APPROX. 0.50CT",
           "Setting": "Prong Setting",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -342,18 +367,19 @@ function buildDetails(product) {
     if (sub === 'halo-pendant') {
       return {
         productInformation: {
-          "Setting": "Halo Basket Setting",
-          "Pendant Style": "Halo Pendant",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
           "Main Stone": `${shape} Diamond`,
-          "Pendant Height": "16.0 mm",
-          "Bail Opening": "3.50 mm",
+          "Side Stones": "Halo Micro-Pavé",
+          "Setting Type": "Halo Basket Setting",
+          "Pendant Style": "Halo Pendant",
+          "Pendant Height": "16.0MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.35ct",
+          "Total Weight": "APPROX. 0.35CT",
           "Setting": "Micro-Pavé",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
@@ -361,35 +387,38 @@ function buildDetails(product) {
     if (sub === 'two-stone-pendant') {
       return {
         productInformation: {
-          "Setting": "Two-Stone Tension Prong",
+          "Metal Colour": "Yellow Gold",
+          "Metal Purity": "14KT / 18KT",
+          "Main Stone": "Two Stone Diamonds",
+          "Side Stones": "None",
+          "Setting Type": "Two-Stone Tension Prong",
           "Pendant Style": "Two Stone Pendant",
-          "Pendant Height": "18.0 mm",
-          "Bail Opening": "3.50 mm",
+          "Pendant Height": "18.0MM",
           "Finish": "High Polish"
         },
         accentStones: {
-          "Type": "Diamonds",
-          "Total weight": "approx. 0.60ct",
+          "Total Weight": "APPROX. 0.60CT",
           "Setting": "Prong Setting",
-          "Colour": "G",
+          "Color": "G",
           "Clarity": "VS"
         }
       };
     }
     return {
       productInformation: {
-        "Setting": "4-Prong Solitaire Basket",
-        "Pendant Style": "Solitaire Pendant",
+        "Metal Colour": "Yellow Gold",
+        "Metal Purity": "14KT / 18KT",
         "Main Stone": `${shape} Diamond`,
-        "Pendant Height": "13.0 mm",
-        "Bail Opening": "3.20 mm",
+        "Side Stones": "None",
+        "Setting Type": "4-Prong Solitaire",
+        "Pendant Style": "Solitaire Pendant",
+        "Pendant Height": "13.0MM",
         "Finish": "High Polish"
       },
       accentStones: {
-        "Type": "Diamonds",
-        "Total weight": "approx. 0.50ct",
+        "Total Weight": "APPROX. 0.50CT",
         "Setting": "Prong Setting",
-        "Colour": "F-G",
+        "Color": "F-G",
         "Clarity": "VS"
       }
     };
@@ -405,9 +434,9 @@ function buildDetails(product) {
       "Fluorescence": "None"
     },
     accentStones: {
+      "Total Weight": "1.50 CT",
       "Type": "Natural Diamond",
-      "Total weight": "1.50 ct",
-      "Colour": "D-F",
+      "Color": "DE",
       "Clarity": "VVS/VS",
       "Certification": "GIA / IGI"
     }
@@ -418,7 +447,6 @@ let count = 0;
 for (const p of products) {
   const details = buildDetails(p);
 
-  // Remove old table format
   delete p.weightDetails;
 
   p.productDetails = details;
@@ -431,4 +459,4 @@ for (const p of products) {
 }
 
 fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2), 'utf8');
-console.log(`Updated specifications & productDetails for ${count} products in products.json.`);
+console.log(`Updated exact spreadsheet specifications for ${count} products.`);
