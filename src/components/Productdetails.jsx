@@ -242,7 +242,7 @@ function Productdetails({ setInquiryState }) {
             className="w-full lg:w-[582px] flex flex-col"
           >
             {/* Breadcrumb */}
-            <div className="text-[11px] 2xl:text-[16px] md:text-[13px] text-[#7A7A7A] 2xl:mb-6 xl:mb-5 lg:mb-3 mb-4 uppercase font-medium flex flex-wrap items-center">
+            <div className="text-[11px] 2xl:text-[15px] md:text-[13px] text-[#7A7A7A] 2xl:mb-6 xl:mb-5 lg:mb-3 mb-4 uppercase font-medium flex flex-wrap items-center italic">
               <Link to="/" className="hover:text-black transition-colors">
                 HOME
               </Link>
@@ -364,7 +364,6 @@ function Productdetails({ setInquiryState }) {
                   </span>
                 </div>
                 <div className="w-full h-px bg-[#9C9C9C] mb-4"></div>
-
                 {weightDetails.type === "table" &&
                   weightDetails.rows?.length > 0 && (
                     <div className="overflow-x-auto rounded border border-gray-200 shadow-sm max-w-full">

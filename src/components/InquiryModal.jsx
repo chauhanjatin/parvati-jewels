@@ -494,8 +494,15 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 name="phone"
                 placeholder="Phone Number"
                 required
-                className="mb-8 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+                className="mb-4 w-full border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
               />
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="4"
+                className="mb-6 w-full resize-none border border-[#E5E5E5] lg:p-4 p-2 lg:text-[14px] text-[12px] focus:border-[#12798C] focus:outline-none"
+              ></textarea>
 
               <button
                 type="submit"
@@ -513,4 +520,4 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
   );
 };
 
-export default InquiryModal;   
+export default InquiryModal;
