@@ -161,6 +161,33 @@ function Productdetails({ setInquiryState }) {
     <div>
       {/* Hero Section */}
       <div className="container mx-auto px-6 2xl:py-14 py-5">
+        {/* Breadcrumb */}
+        <div className="text-[11px] 2xl:text-[15px] md:text-[13px] text-[#7A7A7A] 2xl:mb-6 xl:mb-5 lg:mb-4 mb-4 uppercase font-medium flex flex-wrap items-center italic">
+          <Link to="/" className="hover:text-black transition-colors">
+            HOME
+          </Link>
+          <span className="mx-2 text-gray-300">|</span>
+          <Link
+            to={`/category/${currentCategory?.slug || "rings"}`}
+            className="hover:text-black transition-colors"
+          >
+            {currentCategory?.name?.toUpperCase() || "CATEGORY"}
+          </Link>
+          {currentSubCategory && (
+            <>
+              <span className="mx-2 text-gray-300">|</span>
+              <Link
+                to={`/category/${currentCategory?.slug}?subCategory=${currentSubCategory.slug}`}
+                className="hover:text-[#12798C] transition-colors"
+              >
+                {currentSubCategory.name?.toUpperCase()}
+              </Link>
+            </>
+          )}
+          <span className="mx-2 text-gray-300">|</span>
+          <span className="text-[#3D3D3D]">{product.name}</span>
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-8">
           <ScrollReveal
             animation="fade-up"
@@ -168,28 +195,6 @@ function Productdetails({ setInquiryState }) {
             delay={150}
             className="2xl:w-[785px] xl:w-[785px] lg:w-[765px] md:w-[720px] w-full flex flex-col"
           >
-            <button
-              onClick={() => navigate(-1)}
-              className="flex items-center gap-1 text-black hover:text-[#12798C] transition-colors duration-300 w-fit mb-3 group cursor-pointer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 transform group-hover:-translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                />
-              </svg>
-              <span className="text-[11px] md:text-[13px] 2xl:text-[16px] uppercase font-medium tracking-wide">
-                BACK
-              </span>
-            </button>
             <div className="w-full 2xl:h-[600px] xl:h-[655px] lg:h-[465px] md:h-[495px] h-[260px] flex items-center justify-center overflow-hidden md:mb-8 mb-5">
               <img
                 src={productImageUrl(images[activeIndex]?.imageUrl)}
@@ -272,33 +277,6 @@ function Productdetails({ setInquiryState }) {
             delay={150}
             className="w-full lg:w-[582px] flex flex-col"
           >
-            {/* Breadcrumb */}
-            <div className="text-[11px] 2xl:text-[15px] md:text-[13px] text-[#7A7A7A] 2xl:mb-6 xl:mb-5 lg:mb-3 mb-4 uppercase font-medium flex flex-wrap items-center italic">
-              <Link to="/" className="hover:text-black transition-colors">
-                HOME
-              </Link>
-              <span className="mx-2 text-gray-300">|</span>
-              <Link
-                to={`/category/${currentCategory?.slug || "rings"}`}
-                className="hover:text-black transition-colors"
-              >
-                {currentCategory?.name?.toUpperCase() || "CATEGORY"}
-              </Link>
-              {currentSubCategory && (
-                <>
-                  <span className="mx-2 text-gray-300">|</span>
-                  <Link
-                    to={`/category/${currentCategory?.slug}?subCategory=${currentSubCategory.slug}`}
-                    className="hover:text-[#12798C] transition-colors"
-                  >
-                    {currentSubCategory.name?.toUpperCase()}
-                  </Link>
-                </>
-              )}
-              <span className="mx-2 text-gray-300">|</span>
-              <span className="text-[#3D3D3D]">{product.name}</span>
-            </div>
-
             {/* Product Title */}
             <h1 className="text-[32px] md:text-[38px] xl:text-[36px] font-bellefair text-[#12798C] mb-1">
               {product.name}
