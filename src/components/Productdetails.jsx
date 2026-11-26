@@ -145,25 +145,7 @@ function Productdetails({ setInquiryState }) {
 
   Object.entries(rawProdInfo).forEach(([key, val]) => {
     if (isExcludedKey(key)) return;
-
-    const lowerKey = key.trim().toLowerCase();
-    if (lowerKey === "metal colour" || lowerKey === "metal color") {
-      const selectedMetalName =
-        selectedColor === "pt950" ? "Platinum" : activeMetal.name;
-      prodInfoEntries.push(["Metal Colour", selectedMetalName]);
-    } else if (lowerKey === "metal purity") {
-      const purityVal =
-        selectedColor === "pt950"
-          ? "PT950"
-          : selectedKarat
-          ? selectedKarat.toUpperCase()
-          : "14KT / 18KT";
-      prodInfoEntries.push(["Metal Purity", purityVal]);
-    } else if (lowerKey === "metal") {
-      prodInfoEntries.push(["Metal", dynamicMetalValue]);
-    } else {
-      prodInfoEntries.push([key, val]);
-    }
+    prodInfoEntries.push([key, val]);
   });
 
   const rawAccentStones = productDetails?.accentStones || {};
@@ -406,8 +388,6 @@ function Productdetails({ setInquiryState }) {
               )}
             </div>
 
-
-            
             {/* Inquiry Button */}
             <button
               onClick={() =>
@@ -426,7 +406,7 @@ function Productdetails({ setInquiryState }) {
                 })
               }
               className="w-full bg-[#1A1A1A] text-white py-3.5 xl:py-4 text-[16px] 2xl:text-[20px] font-medium hover:bg-[#12798C] transition-colors 2xl:mb-8 xl:mb-6 mb-6 cursor-pointer tracking-wider uppercase mt-5"
-            >
+            >                        
               Inquiry
             </button>
 
