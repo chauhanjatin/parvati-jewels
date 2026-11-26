@@ -473,6 +473,7 @@ function Productdetails({ setInquiryState }) {
                     </div>
                   </div>
                 )}
+                
               </div>
             )}
 

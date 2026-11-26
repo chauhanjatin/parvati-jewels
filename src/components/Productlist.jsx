@@ -177,7 +177,7 @@ function Productlist() {
                   animation="fade-up" 
                   delay={(index % 4) * 120} 
                   className="flex flex-col">
-                  <Link to={`/products/${product.slug}`} className="relative w-full flex items-center justify-center mb-5 overflow-hidden group">
+                  <Link to={`/products/${product.slug}`} state={{ category: categorySlug }} className="relative w-full flex items-center justify-center mb-5 overflow-hidden group">
                     {product.isBestseller && (
                       <div className="absolute top-4 left-0 z-10">
                         <img src={bestsellerTag} alt="bestsellerTag" />
