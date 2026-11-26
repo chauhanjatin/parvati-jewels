@@ -152,7 +152,13 @@ function Productdetails({ setInquiryState }) {
         selectedColor === "pt950" ? "Platinum" : activeMetal.name;
       prodInfoEntries.push(["Metal Colour", selectedMetalName]);
     } else if (lowerKey === "metal purity") {
-      prodInfoEntries.push(["Metal Purity", "14KT / 18KT"]);
+      const purityVal =
+        selectedColor === "pt950"
+          ? "PT950"
+          : selectedKarat
+          ? selectedKarat.toUpperCase()
+          : "14KT / 18KT";
+      prodInfoEntries.push(["Metal Purity", purityVal]);
     } else if (lowerKey === "metal") {
       prodInfoEntries.push(["Metal", dynamicMetalValue]);
     } else {
@@ -312,9 +318,14 @@ function Productdetails({ setInquiryState }) {
             </div>
 
             {/* Product Title */}
-            <h1 className="text-[32px] md:text-[38px] xl:text-[42px] font-bellefair text-[#12798C] mb-3">
+            <h1 className="text-[32px] md:text-[38px] xl:text-[36px] font-bellefair text-[#12798C] mb-1">
               {product.name}
             </h1>
+            {(product.sku || product.slug) && (
+              <p className="text-[13px] md:text-[14px] 2xl:text-[15px] text-gray-500 font-medium tracking-wider uppercase mb-4">
+                SKU: {product.sku || product.slug?.toUpperCase()}
+              </p>
+            )}
 
             {/* Metal Selection Section */}
             <div className="mb-6 p-3.5 sm:p-4 bg-[#FBFBFB] border border-gray-200/80 rounded-lg">
@@ -369,29 +380,55 @@ function Productdetails({ setInquiryState }) {
                 })}
               </div>
 
-              {/* Karat Tabs at bottom */}
-              <div className="mt-4 pt-3.5 border-t border-gray-200/70">
-                <div className="flex items-center gap-2.5 sm:gap-3">
-                  {KARAT_OPTIONS.map((k) => {
-                    const isSelected = selectedColor !== "pt950" && selectedKarat === k.id;
-                    return (
-                      <button
-                        key={k.id}
-                        type="button"
-                        onClick={() => handleKaratSelect(k.id)}
-                        className={`min-w-[64px] sm:min-w-[76px] px-3.5 py-1.5 sm:px-4 sm:py-2 text-[12px] sm:text-[13px] tracking-wider uppercase transition-all duration-150 cursor-pointer text-center border ${
-                          isSelected
-                            ? "border-[#12798C] text-[#12798C] bg-[#12798C]/5 font-semibold"
-                            : "border-gray-200 text-gray-400 bg-white hover:border-[#12798C]/40 hover:text-[#12798C] font-normal"
-                        }`}
-                      >
-                        {k.label}
-                      </button>
-                    );
-                  })}
+              {/* Karat Tabs at bottom - hidden when PT950 is selected */}
+              {selectedColor !== "pt950" && (
+                <div className="mt-4 pt-3.5 border-t border-gray-200/70">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
+                    {KARAT_OPTIONS.map((k) => {
+                      const isSelected = selectedKarat === k.id;
+                      return (
+                        <button
+                          key={k.id}
+                          type="button"
+                          onClick={() => handleKaratSelect(k.id)}
+                          className={`min-w-[64px] sm:min-w-[76px] px-3.5 py-1.5 sm:px-4 sm:py-2 text-[12px] sm:text-[13px] tracking-wider uppercase transition-all duration-150 cursor-pointer text-center border ${
+                            isSelected
+                              ? "border-[#12798C] text-[#12798C] bg-[#12798C]/5 font-semibold"
+                              : "border-gray-200 text-gray-400 bg-white hover:border-[#12798C]/40 hover:text-[#12798C] font-normal"
+                          }`}
+                        >
+                          {k.label}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
+
+
+            
+            {/* Inquiry Button */}
+            <button
+              onClick={() =>
+                setInquiryState({
+                  isOpen: true,
+                  type: "product",
+                  product: {
+                    ...product,
+                    selectedMetal:
+                      selectedColor === "pt950"
+                        ? "Platinum (pt950)"
+                        : `${selectedKarat.toUpperCase()} ${
+                            METAL_OPTIONS.find((m) => m.id === selectedColor)?.name || "White Gold"
+                          }`,
+                  },
+                })
+              }
+              className="w-full bg-[#1A1A1A] text-white py-3.5 xl:py-4 text-[16px] 2xl:text-[20px] font-medium hover:bg-[#12798C] transition-colors 2xl:mb-8 xl:mb-6 mb-6 cursor-pointer tracking-wider uppercase mt-5"
+            >
+              Inquiry
+            </button>
 
             {/* Product Specifications Section - Exactly like Screenshot 1 */}
             {productDetails && (
@@ -439,27 +476,6 @@ function Productdetails({ setInquiryState }) {
               vary slightly.
             </p>
 
-            {/* Inquiry Button */}
-            <button
-              onClick={() =>
-                setInquiryState({
-                  isOpen: true,
-                  type: "product",
-                  product: {
-                    ...product,
-                    selectedMetal:
-                      selectedColor === "pt950"
-                        ? "Platinum (pt950)"
-                        : `${selectedKarat.toUpperCase()} ${
-                            METAL_OPTIONS.find((m) => m.id === selectedColor)?.name || "White Gold"
-                          }`,
-                  },
-                })
-              }
-              className="w-full bg-[#1A1A1A] text-white py-3.5 xl:py-4 text-[16px] 2xl:text-[20px] font-medium hover:bg-[#12798C] transition-colors 2xl:mb-8 xl:mb-6 mb-6 cursor-pointer tracking-wider uppercase mt-5"
-            >
-              Inquiry
-            </button>
           </ScrollReveal>
         </div>
       </div>

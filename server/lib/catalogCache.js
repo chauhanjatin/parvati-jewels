@@ -36,6 +36,7 @@ function formatProductListItem(product) {
   return {
     id: product.id,
     name: product.name,
+    sku: product.sku || product.variants?.[0]?.sku?.replace(/-default$/, '') || null,
     slug: product.slug,
     isBestseller: Boolean(product.isBestseller),
     primaryImage: product.images?.[0]?.imageUrl || null,
@@ -142,6 +143,7 @@ function loadFallbackFromJson() {
       allProductsCache = jsonProducts.map((p) => ({
         id: p.id,
         name: p.name,
+        sku: p.sku || null,
         slug: p.slug,
         isBestseller: Boolean(p.isBestseller),
         primaryImage: p.image?.startsWith('..')
@@ -266,6 +268,7 @@ function getFallbackProductBySlug(slug) {
     return {
       id: p.id,
       name: p.name,
+      sku: p.sku || null,
       slug: p.slug,
       description: p.description || '',
       shortDescription: p.shortDescription || '',
@@ -360,8 +363,10 @@ async function getProductBySlug(slug) {
           }
         }
 
+        const fallback = getFallbackProductBySlug(slug);
         const detailedProduct = {
           ...product,
+          sku: product.sku || fallback?.sku || product.variants?.[0]?.sku?.replace(/-default$/, '') || null,
           weightDetails: null,
           productDetails,
           specifications,

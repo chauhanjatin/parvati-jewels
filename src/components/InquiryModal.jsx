@@ -451,9 +451,15 @@ const InquiryModal = ({ inquiryState, setInquiryState }) => {
                 </div>
 
                 <div className="flex flex-col text-center sm:text-left justify-center">
-                  <h3 className="lg:mb-2 mb-1 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
+                  <h3 className="lg:mb-1 mb-1 font-bellefair text-[20px] sm:text-[24px] text-[#12798C] 2xl:text-[24px]">
                     {product?.name || "Wedding Ring 18K"}
                   </h3>
+
+                  {(product?.sku || product?.slug) && (
+                    <p className="text-[12px] 2xl:text-[13px] text-gray-500 font-medium uppercase tracking-wider mb-1.5">
+                      SKU: {product?.sku || product?.slug?.toUpperCase()}
+                    </p>
+                  )}
 
                   <p className="text-[13px] text-[#1A1A1A] 2xl:text-[16px]">
                     Category:{" "}

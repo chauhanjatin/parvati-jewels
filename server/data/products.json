@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "PJR 506 Marquise",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-506-marquise",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -61,11 +61,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 506 Marquise"
   },
   {
     "id": 2,
-    "name": "PJR 548 Emerald",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-548-emerald",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -125,11 +126,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 548 Emerald"
   },
   {
     "id": 3,
-    "name": "PJR 631 Round 3stone",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-631-round-3stone",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -189,11 +191,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 631 Round 3stone"
   },
   {
     "id": 4,
-    "name": "A145",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "a145",
     "category": "rings",
     "subCategory": "art-deco",
@@ -254,11 +257,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A145"
   },
   {
     "id": 5,
-    "name": "GRG-62",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "grg-62",
     "category": "rings",
     "subCategory": "art-deco",
@@ -319,11 +323,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GRG-62"
   },
   {
     "id": 6,
-    "name": "PJR 38 Asscher",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-38-asscher",
     "category": "rings",
     "subCategory": "art-deco",
@@ -383,11 +388,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 38 Asscher"
   },
   {
     "id": 7,
-    "name": "PJR 38 Cushion",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-38-cushion",
     "category": "rings",
     "subCategory": "art-deco",
@@ -448,11 +454,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 38 Cushion"
   },
   {
     "id": 8,
-    "name": "PJR 38 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-38-oval",
     "category": "rings",
     "subCategory": "art-deco",
@@ -513,11 +520,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 38 Oval"
   },
   {
     "id": 9,
-    "name": "PJR 71 Radiant CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-71-radiant-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -577,11 +585,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 71 Radiant CS"
   },
   {
     "id": 10,
-    "name": "PJR 75 Radiant",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-75-radiant",
     "category": "rings",
     "subCategory": "art-deco",
@@ -642,11 +651,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 75 Radiant"
   },
   {
     "id": 11,
-    "name": "PJR 110 Emerald CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-110-emerald-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -706,11 +716,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 110 Emerald CS"
   },
   {
     "id": 12,
-    "name": "PJR 153 Emerald",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-153-emerald",
     "category": "rings",
     "subCategory": "art-deco",
@@ -770,11 +781,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 153 Emerald"
   },
   {
     "id": 13,
-    "name": "PJR 513 Oval CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-513-oval-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -834,11 +846,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 513 Oval CS"
   },
   {
     "id": 14,
-    "name": "PJR 314 (PE-EM) CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-314-pe-em-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -898,11 +911,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 314 (PE-EM) CS"
   },
   {
     "id": 15,
-    "name": "PJR 315 (MQ-OV) CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-315-mq-ov-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -962,11 +976,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 315 (MQ-OV) CS"
   },
   {
     "id": 16,
-    "name": "PJR 363 (OV-PE) CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-363-ov-pe-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1026,11 +1041,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 363 (OV-PE) CS"
   },
   {
     "id": 17,
-    "name": "PJR 371 (OV-PE) CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-371-ov-pe-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1090,11 +1106,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 371 (OV-PE) CS"
   },
   {
     "id": 18,
-    "name": "PJR 551 Emerald CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-551-emerald-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1154,11 +1171,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 551 Emerald CS"
   },
   {
     "id": 19,
-    "name": "PJR 553 Marquise CS",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-553-marquise-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1218,11 +1236,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 553 Marquise CS"
   },
   {
     "id": 20,
-    "name": "PJR 591 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-591-round",
     "category": "rings",
     "subCategory": "et",
@@ -1282,11 +1301,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 591 Round"
   },
   {
     "id": 21,
-    "name": "PJR 594 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-594-round",
     "category": "rings",
     "subCategory": "et",
@@ -1346,11 +1366,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 594 Round"
   },
   {
     "id": 22,
-    "name": "PJR 601 Round Full",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-601-round-full",
     "category": "rings",
     "subCategory": "et",
@@ -1410,11 +1431,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 601 Round Full"
   },
   {
     "id": 23,
-    "name": "PJR 602 Round Half",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-602-round-half",
     "category": "rings",
     "subCategory": "et",
@@ -1474,11 +1496,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 602 Round Half"
   },
   {
     "id": 24,
-    "name": "PJR 605 Round Full Eternity",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-605-round-full-eternity",
     "category": "rings",
     "subCategory": "et",
@@ -1538,11 +1561,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 605 Round Full Eternity"
   },
   {
     "id": 25,
-    "name": "PJR 608 Half",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-608-half",
     "category": "rings",
     "subCategory": "et",
@@ -1602,11 +1626,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 608 Half"
   },
   {
     "id": 26,
-    "name": "PJR 609 Full",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-609-full",
     "category": "rings",
     "subCategory": "et",
@@ -1666,11 +1691,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 609 Full"
   },
   {
     "id": 27,
-    "name": "PJR 611 Half",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-611-half",
     "category": "rings",
     "subCategory": "et",
@@ -1727,11 +1753,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 611 Half"
   },
   {
     "id": 28,
-    "name": "PJR 614 Half",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-614-half",
     "category": "rings",
     "subCategory": "et",
@@ -1791,11 +1818,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 614 Half"
   },
   {
     "id": 29,
-    "name": "PJR 615 7stone",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-615-7stone",
     "category": "rings",
     "subCategory": "et",
@@ -1855,11 +1883,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 615 7stone"
   },
   {
     "id": 30,
-    "name": "PJR 618 Half",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-618-half",
     "category": "rings",
     "subCategory": "et",
@@ -1919,11 +1948,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 618 Half"
   },
   {
     "id": 31,
-    "name": "PJR 630 Round 5stone",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-630-round-5stone",
     "category": "rings",
     "subCategory": "et",
@@ -1983,11 +2013,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 630 Round 5stone"
   },
   {
     "id": 32,
-    "name": "GRG-OV-23",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "grg-ov-23",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2048,11 +2079,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GRG-OV-23"
   },
   {
     "id": 33,
-    "name": "PJR 512 Emerald",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-512-emerald",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2112,11 +2144,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 512 Emerald"
   },
   {
     "id": 34,
-    "name": "PJR 537 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-537-round",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2176,11 +2209,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 537 Round"
   },
   {
     "id": 35,
-    "name": "PJR 540 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-540-oval",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2240,11 +2274,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 540 Oval"
   },
   {
     "id": 36,
-    "name": "PJR 579 Cushion",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-579-cushion",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2304,11 +2339,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 579 Cushion"
   },
   {
     "id": 37,
-    "name": "PJR 582 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-582-oval",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2368,11 +2404,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 582 Oval"
   },
   {
     "id": 38,
-    "name": "PJR 318 Emerald",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-318-emerald",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2432,11 +2469,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 318 Emerald"
   },
   {
     "id": 39,
-    "name": "PJR 318 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-318-oval",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2496,11 +2534,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 318 Oval"
   },
   {
     "id": 40,
-    "name": "PJR 501 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-501-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2560,11 +2599,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 501 Round"
   },
   {
     "id": 41,
-    "name": "PJR 502 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-502-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2624,11 +2664,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 502 Round"
   },
   {
     "id": 42,
-    "name": "PJR 504 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-504-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2688,11 +2729,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 504 Round"
   },
   {
     "id": 43,
-    "name": "PJR 505 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-505-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2752,11 +2794,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 505 Round"
   },
   {
     "id": 44,
-    "name": "PJR 519 Pear",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-519-pear",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2816,11 +2859,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 519 Pear"
   },
   {
     "id": 45,
-    "name": "PJR 538 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-538-oval",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2880,11 +2924,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 538 Oval"
   },
   {
     "id": 46,
-    "name": "PJR 541 Pear",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-541-pear",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2944,11 +2989,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 541 Pear"
   },
   {
     "id": 47,
-    "name": "PJR 556 Princess",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-556-princess",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3008,11 +3054,12 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 556 Princess"
   },
   {
     "id": 48,
-    "name": "PJR 516 Marquise",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-516-marquise",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3072,11 +3119,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 516 Marquise"
   },
   {
     "id": 49,
-    "name": "PJR 518 Pear",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-518-pear",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3136,11 +3184,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 518 Pear"
   },
   {
     "id": 50,
-    "name": "PJR 520 Emerald",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-520-emerald",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3200,11 +3249,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 520 Emerald"
   },
   {
     "id": 51,
-    "name": "PJR 536 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-536-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3265,11 +3315,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 536 Round"
   },
   {
     "id": 52,
-    "name": "PJR 547 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-547-oval",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3329,11 +3380,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 547 Oval"
   },
   {
     "id": 53,
-    "name": "PJR 584 Oval",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-584-oval",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3393,11 +3445,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 584 Oval"
   },
   {
     "id": 54,
-    "name": "PJR 628 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-628-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3457,11 +3510,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 628 Round"
   },
   {
     "id": 55,
-    "name": "PJR 722 Round",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-722-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3521,11 +3575,12 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJR 722 Round"
   },
   {
     "id": 56,
-    "name": "PJR 363 (PE-EM)",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-363-pe-em",
     "category": "rings",
     "subCategory": "toi-moi-ring",
@@ -3585,11 +3640,12 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 363 (PE-EM)"
   },
   {
     "id": 57,
-    "name": "PJR 371 (PE-EM)",
+    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
     "slug": "pjr-371-pe-em",
     "category": "rings",
     "subCategory": "toi-moi-ring",
@@ -3649,7 +3705,8 @@
         "Color": "DE",
         "Clarity": "VVS/VS"
       }
-    }
+    },
+    "sku": "PJR 371 (PE-EM)"
   },
   {
     "id": 58,
@@ -3714,7 +3771,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1ECU-55-DIA"
   },
   {
     "id": 59,
@@ -3776,7 +3834,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1OV-61"
   },
   {
     "id": 60,
@@ -3838,7 +3897,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1RAD-56"
   },
   {
     "id": 61,
@@ -3900,7 +3960,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1SH-38"
   },
   {
     "id": 62,
@@ -3962,7 +4023,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 55 Round"
   },
   {
     "id": 63,
@@ -4024,7 +4086,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 61 Round"
   },
   {
     "id": 64,
@@ -4086,7 +4149,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 62 Emerald"
   },
   {
     "id": 65,
@@ -4148,7 +4212,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 75 Emerald"
   },
   {
     "id": 66,
@@ -4210,7 +4275,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 82 Round"
   },
   {
     "id": 67,
@@ -4272,7 +4338,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 86 Emerald"
   },
   {
     "id": 68,
@@ -4334,7 +4401,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 89 Pear"
   },
   {
     "id": 69,
@@ -4396,7 +4464,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE1"
   },
   {
     "id": 70,
@@ -4458,7 +4527,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE2"
   },
   {
     "id": 71,
@@ -4520,7 +4590,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1RAD-35"
   },
   {
     "id": 72,
@@ -4582,7 +4653,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-1RAD-52"
   },
   {
     "id": 73,
@@ -4644,7 +4716,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-5OV-34"
   },
   {
     "id": 74,
@@ -4706,7 +4779,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-CS-12"
   },
   {
     "id": 75,
@@ -4768,7 +4842,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-CS-13"
   },
   {
     "id": 76,
@@ -4830,7 +4905,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-CS-16"
   },
   {
     "id": 77,
@@ -4892,7 +4968,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-CS-50"
   },
   {
     "id": 78,
@@ -4954,7 +5031,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-EM-18"
   },
   {
     "id": 79,
@@ -5016,7 +5094,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-EM-40"
   },
   {
     "id": 80,
@@ -5078,7 +5157,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-MQ-11"
   },
   {
     "id": 81,
@@ -5140,7 +5220,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-MQ-32"
   },
   {
     "id": 82,
@@ -5202,7 +5283,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-MQ-43"
   },
   {
     "id": 83,
@@ -5264,7 +5346,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-OCT-21"
   },
   {
     "id": 84,
@@ -5326,7 +5409,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-OV-51"
   },
   {
     "id": 85,
@@ -5388,7 +5472,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-PE-10"
   },
   {
     "id": 86,
@@ -5450,7 +5535,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-PE-18"
   },
   {
     "id": 87,
@@ -5512,7 +5598,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-PE-62"
   },
   {
     "id": 88,
@@ -5574,7 +5661,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 57 Round"
   },
   {
     "id": 89,
@@ -5636,7 +5724,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 59 Pear"
   },
   {
     "id": 90,
@@ -5698,7 +5787,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 64 Round"
   },
   {
     "id": 91,
@@ -5760,7 +5850,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 66 Bag"
   },
   {
     "id": 92,
@@ -5822,7 +5913,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 68 Bag"
   },
   {
     "id": 93,
@@ -5884,7 +5976,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 74 Round"
   },
   {
     "id": 94,
@@ -5946,7 +6039,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GER-65"
   },
   {
     "id": 95,
@@ -6008,7 +6102,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 53 Round"
   },
   {
     "id": 96,
@@ -6070,7 +6165,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 54 Round"
   },
   {
     "id": 97,
@@ -6132,7 +6228,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 58 Asscher"
   },
   {
     "id": 98,
@@ -6194,7 +6291,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJE 93 Emerald"
   },
   {
     "id": 99,
@@ -6258,7 +6356,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GBG-RD-26"
   },
   {
     "id": 100,
@@ -6322,7 +6421,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 21 Mix Bug-Round"
   },
   {
     "id": 101,
@@ -6386,7 +6486,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 201 Emerald"
   },
   {
     "id": 102,
@@ -6450,7 +6551,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 202 Emerald"
   },
   {
     "id": 103,
@@ -6514,7 +6616,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 203 Oval"
   },
   {
     "id": 104,
@@ -6578,7 +6681,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 204 Marquise"
   },
   {
     "id": 105,
@@ -6642,7 +6746,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 205 Mix Oval-Round"
   },
   {
     "id": 106,
@@ -6706,7 +6811,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 206 Round"
   },
   {
     "id": 107,
@@ -6770,7 +6876,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 207 Mix OV-MQ"
   },
   {
     "id": 108,
@@ -6834,7 +6941,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 208 Mix PE-MQ"
   },
   {
     "id": 109,
@@ -6898,7 +7006,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 209 Mix EM-RD"
   },
   {
     "id": 110,
@@ -6962,7 +7071,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 210 Mix PE-RD"
   },
   {
     "id": 111,
@@ -7026,7 +7136,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 211 Oval"
   },
   {
     "id": 112,
@@ -7090,7 +7201,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 212 Pear"
   },
   {
     "id": 113,
@@ -7154,7 +7266,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 500 Round (CROWN)"
   },
   {
     "id": 114,
@@ -7218,7 +7331,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 501 Round"
   },
   {
     "id": 115,
@@ -7282,7 +7396,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 Across-EM-BZ"
   },
   {
     "id": 116,
@@ -7346,7 +7461,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 Across-OV-BZ"
   },
   {
     "id": 117,
@@ -7410,7 +7526,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 EM-BZ"
   },
   {
     "id": 118,
@@ -7474,7 +7591,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 OV-BZ"
   },
   {
     "id": 119,
@@ -7538,7 +7656,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 PE-BZ"
   },
   {
     "id": 120,
@@ -7602,7 +7721,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 506 RD-BZ"
   },
   {
     "id": 121,
@@ -7666,7 +7786,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 508 Pear"
   },
   {
     "id": 122,
@@ -7730,7 +7851,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 513 Pear"
   },
   {
     "id": 123,
@@ -7794,7 +7916,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 514 Round"
   },
   {
     "id": 124,
@@ -7858,7 +7981,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 516 MLT RD-PR-OVL-EM-MQ-CS"
   },
   {
     "id": 125,
@@ -7922,7 +8046,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 Across-OV-BZ"
   },
   {
     "id": 126,
@@ -7986,7 +8111,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 Across-EM-BZ"
   },
   {
     "id": 127,
@@ -8050,7 +8176,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 EM-BZ"
   },
   {
     "id": 128,
@@ -8114,7 +8241,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 OV-BZ"
   },
   {
     "id": 129,
@@ -8178,7 +8306,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 PE-BZ"
   },
   {
     "id": 130,
@@ -8242,7 +8371,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 520 RD-BZ"
   },
   {
     "id": 131,
@@ -8306,7 +8436,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 521 Across-EM"
   },
   {
     "id": 132,
@@ -8370,7 +8501,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 521 Emerald"
   },
   {
     "id": 133,
@@ -8434,7 +8566,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 522 across Oval"
   },
   {
     "id": 134,
@@ -8498,7 +8631,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 523 Pear"
   },
   {
     "id": 135,
@@ -8562,7 +8696,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 524 Round"
   },
   {
     "id": 136,
@@ -8626,7 +8761,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJBR 525 MLT"
   },
   {
     "id": 137,
@@ -8691,7 +8827,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A26"
   },
   {
     "id": 138,
@@ -8755,7 +8892,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A41"
   },
   {
     "id": 139,
@@ -8819,7 +8957,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A42"
   },
   {
     "id": 140,
@@ -8882,7 +9021,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A73"
   },
   {
     "id": 141,
@@ -8947,7 +9087,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A74"
   },
   {
     "id": 142,
@@ -9009,7 +9150,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A140"
   },
   {
     "id": 143,
@@ -9074,7 +9216,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "A149"
   },
   {
     "id": 144,
@@ -9136,7 +9279,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-03"
   },
   {
     "id": 145,
@@ -9197,7 +9341,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-39 62GM"
   },
   {
     "id": 146,
@@ -9260,7 +9405,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-EM-30"
   },
   {
     "id": 147,
@@ -9322,7 +9468,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-EM-31"
   },
   {
     "id": 148,
@@ -9384,7 +9531,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-OV-32"
   },
   {
     "id": 149,
@@ -9446,7 +9594,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-OV-35"
   },
   {
     "id": 150,
@@ -9508,7 +9657,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-OV-36"
   },
   {
     "id": 151,
@@ -9570,7 +9720,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-OV-37"
   },
   {
     "id": 152,
@@ -9633,7 +9784,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-OV-38"
   },
   {
     "id": 153,
@@ -9694,7 +9846,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-PE-29"
   },
   {
     "id": 154,
@@ -9755,7 +9908,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-PE-34"
   },
   {
     "id": 155,
@@ -9817,7 +9971,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-RD-09"
   },
   {
     "id": 156,
@@ -9879,7 +10034,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-RD-27"
   },
   {
     "id": 157,
@@ -9938,7 +10094,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-RD-28"
   },
   {
     "id": 158,
@@ -10000,7 +10157,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GNK-RD-33"
   },
   {
     "id": 159,
@@ -10062,7 +10220,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 212 Round"
   },
   {
     "id": 160,
@@ -10124,7 +10283,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 213 LC1"
   },
   {
     "id": 161,
@@ -10186,7 +10346,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 213 LC2"
   },
   {
     "id": 162,
@@ -10248,7 +10409,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 213 LC3"
   },
   {
     "id": 163,
@@ -10310,7 +10472,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 213 LC4"
   },
   {
     "id": 164,
@@ -10372,7 +10535,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 215 A15 (1)"
   },
   {
     "id": 165,
@@ -10434,7 +10598,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 215 A15 (2)"
   },
   {
     "id": 166,
@@ -10496,7 +10661,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 215 A15 (3)"
   },
   {
     "id": 167,
@@ -10558,7 +10724,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 111 Blue CS"
   },
   {
     "id": 168,
@@ -10620,7 +10787,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 111 Emerald"
   },
   {
     "id": 169,
@@ -10682,7 +10850,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 202 Cushion"
   },
   {
     "id": 170,
@@ -10744,7 +10913,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 203 Cushion"
   },
   {
     "id": 171,
@@ -10806,7 +10976,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 204 Emerald"
   },
   {
     "id": 172,
@@ -10868,7 +11039,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 205 Emerald"
   },
   {
     "id": 173,
@@ -10930,7 +11102,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 206 Oval"
   },
   {
     "id": 174,
@@ -10992,7 +11165,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 207 Oval"
   },
   {
     "id": 175,
@@ -11054,7 +11228,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 208 Pear"
   },
   {
     "id": 176,
@@ -11116,7 +11291,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 209 Pear"
   },
   {
     "id": 177,
@@ -11178,7 +11354,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 210 Round"
   },
   {
     "id": 178,
@@ -11240,7 +11417,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 211 Round"
   },
   {
     "id": 179,
@@ -11302,7 +11480,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 201 Emerald"
   },
   {
     "id": 180,
@@ -11364,7 +11543,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 201 Oval"
   },
   {
     "id": 181,
@@ -11426,7 +11606,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 201 Princess"
   },
   {
     "id": 182,
@@ -11488,7 +11669,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 201 Radiant"
   },
   {
     "id": 183,
@@ -11550,7 +11732,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 201 Round"
   },
   {
     "id": 184,
@@ -11612,7 +11795,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 221 Emerald"
   },
   {
     "id": 185,
@@ -11674,7 +11858,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 221 Princess"
   },
   {
     "id": 186,
@@ -11736,7 +11921,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 221 Radiant"
   },
   {
     "id": 187,
@@ -11798,7 +11984,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 221 Round"
   },
   {
     "id": 188,
@@ -11860,7 +12047,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 222 Princess"
   },
   {
     "id": 189,
@@ -11922,7 +12110,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 222 Round"
   },
   {
     "id": 190,
@@ -11984,7 +12173,8 @@
         "Color": "F-G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "PJP 221 Pear"
   },
   {
     "id": 191,
@@ -12046,7 +12236,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GPD-1MX-66"
   },
   {
     "id": 192,
@@ -12108,7 +12299,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GPD-1MX-139"
   },
   {
     "id": 193,
@@ -12170,7 +12362,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GPD-1MX-140"
   },
   {
     "id": 194,
@@ -12232,7 +12425,8 @@
         "Color": "G",
         "Clarity": "VS"
       }
-    }
+    },
+    "sku": "GPD-1MX-141"
   },
   {
     "id": 195,
@@ -12286,7 +12480,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Round Cut Diamond"
   },
   {
     "id": 196,
@@ -12340,7 +12535,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Princess Cut Diamond"
   },
   {
     "id": 197,
@@ -12394,7 +12590,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Emerald Cut Diamond"
   },
   {
     "id": 198,
@@ -12448,7 +12645,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Asscher Cut Diamond"
   },
   {
     "id": 199,
@@ -12502,7 +12700,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Cushion Cut Diamond"
   },
   {
     "id": 200,
@@ -12556,7 +12755,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Marquise Cut Diamond"
   },
   {
     "id": 201,
@@ -12610,7 +12810,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Radiant Cut Diamond"
   },
   {
     "id": 202,
@@ -12664,7 +12865,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Oval Cut Diamond"
   },
   {
     "id": 203,
@@ -12718,7 +12920,8 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Pear Cut Diamond"
   },
   {
     "id": 204,
@@ -12772,6 +12975,7 @@
         "Clarity": "VVS/VS",
         "Certification": "GIA / IGI"
       }
-    }
+    },
+    "sku": "Heart Cut Diamond"
   }
 ]
