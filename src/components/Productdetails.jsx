@@ -94,33 +94,70 @@ function Productdetails({ setInquiryState }) {
       ? product.images
       : [{ imageUrl: "" }];
 
-  let weightDetails = product.weightDetails || null;
-  if (!weightDetails && product.details) {
-    weightDetails = {
-      type: "details",
-      title: "Product Details",
-      details: product.details,
-    };
-  }
-  if (!weightDetails && product.variants?.[0]?.specifications) {
-    try {
-      const specs =
-        typeof product.variants[0].specifications === "string"
-          ? JSON.parse(product.variants[0].specifications)
-          : product.variants[0].specifications;
-      weightDetails =
-        specs.weightDetails ||
-        (specs.details
-          ? {
-              type: "details",
-              title: "Product Details",
-              details: specs.details,
-            }
-          : null);
-    } catch {
-      // ignore
+  const productDetails =
+    product.productDetails ||
+    product.specifications?.productDetails ||
+    (product.specifications?.productInformation
+      ? {
+          productInformation: product.specifications.productInformation,
+          accentStones: product.specifications.accentStones,
+        }
+      : null) ||
+    (product.variants?.[0]?.specifications
+      ? (() => {
+          try {
+            const s =
+              typeof product.variants[0].specifications === "string"
+                ? JSON.parse(product.variants[0].specifications)
+                : product.variants[0].specifications;
+            return (
+              s.productDetails ||
+              (s.productInformation
+                ? {
+                    productInformation: s.productInformation,
+                    accentStones: s.accentStones,
+                  }
+                : null)
+            );
+          } catch {
+            return null;
+          }
+        })()
+      : null);
+
+  const activeMetal =
+    METAL_OPTIONS.find((m) => m.id === selectedColor) || METAL_OPTIONS[0];
+  const activeKarat =
+    KARAT_OPTIONS.find((k) => k.id === selectedKarat) || KARAT_OPTIONS[2];
+  const dynamicMetalValue =
+    selectedColor === "pt950"
+      ? "Platinum (PT950)"
+      : `${activeMetal.name} (${activeKarat.label.toLowerCase()})`;
+
+  // Assemble dynamic product information with reactive Metal value
+  const rawProdInfo = productDetails?.productInformation || {};
+  const prodInfoEntries = [];
+  let metalAdded = false;
+
+  Object.entries(rawProdInfo).forEach(([key, val]) => {
+    if (key.toLowerCase() === "metal") {
+      prodInfoEntries.push(["Metal", dynamicMetalValue]);
+      metalAdded = true;
+    } else {
+      prodInfoEntries.push([key, val]);
+      if (key.toLowerCase() === "setting" && !metalAdded) {
+        prodInfoEntries.push(["Metal", dynamicMetalValue]);
+        metalAdded = true;
+      }
     }
+  });
+
+  if (!metalAdded && Object.keys(rawProdInfo).length > 0) {
+    prodInfoEntries.splice(1, 0, ["Metal", dynamicMetalValue]);
   }
+
+  const rawAccentStones = productDetails?.accentStones || {};
+  const accentEntries = Object.entries(rawAccentStones);
 
   const parentCategory = product.category?.parent;
   const currentCategory = parentCategory || product.category;
@@ -350,130 +387,44 @@ function Productdetails({ setInquiryState }) {
               </div>
             </div>
 
-            {/* Metal & Weight Breakdown Section */}
-            {weightDetails && (
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-2">
-                  <p className="text-[#1A1A1A] text-[16px] 2xl:text-[18px] font-medium">
-                    {weightDetails.title || "Metal & Weight Breakdown"}
-                  </p>
-                  <span className="text-[10px] 2xl:text-[11px] text-[#12798C] uppercase tracking-wider font-semibold bg-[#EAF5F7] px-2.5 py-1 rounded">
-                    {weightDetails.type === "table"
-                      ? "Approx Weights"
-                      : "Specifications"}
-                  </span>
+            {/* Product Specifications Section - Exactly like Screenshot 1 */}
+            {productDetails && (
+              <div className="py-4 my-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12">
+                  {/* Left Column: Product Information */}
+                  {prodInfoEntries.length > 0 && (
+                    <div>
+                      <h4 className="text-[15px] 2xl:text-[16px] font-bold text-[#1A1A1A] mb-3">
+                        Product Information:
+                      </h4>
+                      <div className="space-y-2 text-[14px] 2xl:text-[15px]">
+                        {prodInfoEntries.map(([key, val]) => (
+                          <div key={key} className="text-[#1A1A1A]">
+                            <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
+                            <span className="text-[#333333]">{val}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Right Column: Accent stones */}
+                  {accentEntries.length > 0 && (
+                    <div>
+                      <h4 className="text-[15px] 2xl:text-[16px] font-bold text-[#1A1A1A] mb-3">
+                        Accent stones:
+                      </h4>
+                      <div className="space-y-2 text-[14px] 2xl:text-[15px]">
+                        {accentEntries.map(([key, val]) => (
+                          <div key={key} className="text-[#1A1A1A]">
+                            <span className="font-normal text-[#1A1A1A]">{key}:</span>{" "}
+                            <span className="text-[#333333]">{val}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div className="w-full h-px bg-[#9C9C9C] mb-4"></div>
-                {weightDetails.type === "table" &&
-                  weightDetails.rows?.length > 0 && (
-                    <div className="overflow-x-auto rounded border border-gray-200 shadow-sm max-w-full">
-                      <table className="w-full text-left text-[12px] md:text-[13px] 2xl:text-[14px]">
-                        <thead className="bg-[#12798C] text-white uppercase text-[11px] md:text-[12px] tracking-wider">
-                          <tr>
-                            {weightDetails.headers.map((h, i) => (
-                              <th
-                                key={i}
-                                className="py-2.5 px-3 font-medium whitespace-nowrap text-center first:text-left"
-                              >
-                                {h}
-                              </th>
-                            ))}
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-gray-100 bg-white">
-                          {weightDetails.rows.map((row, rIdx) => (
-                            <tr
-                              key={rIdx}
-                              className={
-                                rIdx % 2 === 0
-                                  ? "bg-white hover:bg-gray-50"
-                                  : "bg-gray-50/70 hover:bg-gray-100/70"
-                              }
-                            >
-                              {row.map((cell, cIdx) => (
-                                <td
-                                  key={cIdx}
-                                  className="py-2 px-3 text-center first:text-left text-[#2B2B2B] whitespace-nowrap font-normal"
-                                >
-                                  {cell}
-                                </td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-
-                {weightDetails.type === "list" &&
-                  weightDetails.items?.length > 0 && (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {weightDetails.items.map((item, idx) => (
-                        <div
-                          key={idx}
-                          className="p-3.5 bg-gray-50 rounded border border-gray-200"
-                        >
-                          <span className="text-[14px] font-semibold text-[#12798C] block mb-1.5">
-                            {item.label}
-                          </span>
-                          {item.grossWeight && (
-                            <div className="text-[13px] text-gray-700 flex justify-between">
-                              <span>Gross Weight:</span>
-                              <span className="font-medium text-gray-900">
-                                {item.grossWeight}
-                              </span>
-                            </div>
-                          )}
-                          {item.finishWeight && (
-                            <div className="text-[13px] text-gray-700 flex justify-between mt-1">
-                              <span>Finish Weight:</span>
-                              <span className="font-medium text-[#12798C]">
-                                {item.finishWeight}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                {weightDetails.type === "details" && weightDetails.details && (
-                  <div className="space-y-2.5 bg-gray-50/70 p-4 rounded-lg border border-gray-200">
-                  
-                    <div className="space-y-2 pt-1 text-[13px] md:text-[14px] 2xl:text-[15px]">
-                      {Array.isArray(weightDetails.details)
-                        ? weightDetails.details.map((item, idx) => (
-                            <div
-                              key={idx}
-                              className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2"
-                            >
-                              <span className="font-semibold text-gray-800 min-w-[150px]">
-                                {item.label || item.key}:
-                              </span>
-                              <span className="text-gray-700 whitespace-pre-line">
-                                {item.value}
-                              </span>
-                            </div>
-                          ))
-                        : Object.entries(weightDetails.details).map(
-                            ([key, val]) => (
-                              <div
-                                key={key}
-                                className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2"
-                              >
-                                <span className="font-semibold text-gray-800 min-w-[150px]">
-                                  {key}:
-                                </span>
-                                <span className="text-gray-700 whitespace-pre-line">
-                                  {val}
-                                </span>
-                              </div>
-                            ),
-                          )}
-                    </div>
-                  </div>
-                )}
-                
               </div>
             )}
 

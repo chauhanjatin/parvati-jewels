@@ -1,9 +1,14 @@
 function enrichProductRecord(item) {
   const id = Number(item.id) || 1;
-  const weightDetails =
-    item.weightDetails || item.specifications?.weightDetails || null;
+  const productDetails = item.productDetails || (item.specifications?.productInformation ? {
+    productInformation: item.specifications.productInformation,
+    accentStones: item.specifications.accentStones
+  } : null);
 
-  const specifications = weightDetails ? { weightDetails } : {};
+  const specifications = {
+    ...item.specifications,
+    productDetails,
+  };
 
   return {
     id,
@@ -11,7 +16,8 @@ function enrichProductRecord(item) {
     slug: item.slug,
     category: item.category,
     subCategory: item.subCategory || null,
-    weightDetails,
+    productDetails,
+    weightDetails: null,
     isBestseller: Boolean(item.isBestseller),
     isFeatured: item.isFeatured != null ? Boolean(item.isFeatured) : Boolean(item.isBestseller),
     price: 0,

@@ -47,7 +47,15 @@ function formatProductListItem(product) {
     stoneShape:
       specs.stone_shape ||
       pickStoneShape({ id: product.id, slug: product.slug }),
-    weightDetails: specs.weightDetails || null,
+    weightDetails: null,
+    productDetails:
+      specs.productDetails ||
+      (specs.productInformation
+        ? {
+            productInformation: specs.productInformation,
+            accentStones: specs.accentStones,
+          }
+        : null),
     minPrice,
     maxPrice,
   };
@@ -143,7 +151,15 @@ function loadFallbackFromJson() {
         subCategory: p.subCategory || null,
         subCategoryName: p.subCategory || null,
         stoneShape: p.specifications?.stone_shape || pickStoneShape(p),
-        weightDetails: p.weightDetails || p.specifications?.weightDetails || null,
+        weightDetails: null,
+        productDetails:
+          p.productDetails ||
+          (p.specifications?.productInformation
+            ? {
+                productInformation: p.specifications.productInformation,
+                accentStones: p.specifications.accentStones,
+              }
+            : null),
         minPrice: p.price || 0,
         maxPrice: p.price || 0,
       }));
@@ -257,13 +273,21 @@ function getFallbackProductBySlug(slug) {
       isBestseller: Boolean(p.isBestseller),
       category: categoryObj,
       images: allImages,
-      weightDetails: p.weightDetails || p.specifications?.weightDetails || null,
+      weightDetails: null,
+      productDetails:
+        p.productDetails ||
+        (p.specifications?.productInformation
+          ? {
+              productInformation: p.specifications.productInformation,
+              accentStones: p.specifications.accentStones,
+            }
+          : null),
       specifications: p.specifications || null,
       variants: [
         {
           id: p.id,
           price: p.price || 0,
-          specifications: p.specifications || (p.weightDetails ? { weightDetails: p.weightDetails } : null),
+          specifications: p.specifications || (p.productDetails ? { productDetails: p.productDetails } : null),
         },
       ],
     };
@@ -300,22 +324,47 @@ async function getProductBySlug(slug) {
       );
 
       if (product) {
-        let weightDetails = null;
+        let specifications = null;
+        let productDetails = null;
         if (product.variants?.[0]?.specifications) {
           try {
             const specs =
               typeof product.variants[0].specifications === 'string'
                 ? JSON.parse(product.variants[0].specifications)
                 : product.variants[0].specifications;
-            weightDetails = specs.weightDetails || null;
+            specifications = specs;
+            productDetails =
+              specs.productDetails ||
+              (specs.productInformation
+                ? {
+                    productInformation: specs.productInformation,
+                    accentStones: specs.accentStones,
+                  }
+                : null);
           } catch (e) {
             // ignore
           }
         }
 
+        // If DB variant specs didn't have productDetails, fallback to products.json productDetails
+        if (!productDetails) {
+          const fallback = getFallbackProductBySlug(slug);
+          if (fallback?.productDetails) {
+            productDetails = fallback.productDetails;
+            specifications = {
+              ...specifications,
+              productDetails,
+              productInformation: fallback.productDetails.productInformation,
+              accentStones: fallback.productDetails.accentStones,
+            };
+          }
+        }
+
         const detailedProduct = {
           ...product,
-          weightDetails,
+          weightDetails: null,
+          productDetails,
+          specifications,
         };
 
         productsBySlugCache.set(slug, detailedProduct);
