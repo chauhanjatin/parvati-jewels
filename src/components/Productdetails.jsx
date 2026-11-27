@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import CTA from "./CTA";
 import ScrollReveal from "./ScrollReveal";
 import { fetchJson } from "../lib/api";
@@ -41,7 +41,6 @@ const KARAT_OPTIONS = [
 
 function Productdetails({ setInquiryState }) {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(0);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -125,16 +124,7 @@ function Productdetails({ setInquiryState }) {
         })()
       : null);
 
-  const activeMetal =
-    METAL_OPTIONS.find((m) => m.id === selectedColor) || METAL_OPTIONS[0];
-  const activeKarat =
-    KARAT_OPTIONS.find((k) => k.id === selectedKarat) || KARAT_OPTIONS[2];
-  const dynamicMetalValue =
-    selectedColor === "pt950"
-      ? "Platinum (PT950)"
-      : `${activeMetal.name} (${activeKarat.label.toLowerCase()})`;
-
-  // Assemble dynamic product information with reactive Metal value (excluding Product Name & Category)
+  // Assemble product information (excluding Product Name & Category)
   const isExcludedKey = (k) => {
     const lower = String(k).trim().toLowerCase();
     return lower === "product name" || lower === "productname" || lower === "category";

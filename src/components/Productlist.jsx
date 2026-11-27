@@ -6,7 +6,7 @@ import bestsellerTag from '../assets/bestsellers.png'
 import { fetchJson } from '../lib/api'
 import Loader from './Loader'
 import { productImageUrl } from '../lib/productImage'
-import { getSubCategories, getCategoryInfo } from '../lib/categoryStructure'
+import { getSubCategories } from '../lib/categoryStructure'
 
 import ringsBanner from '../assets/ring-heroimg.png'
 import earringsBanner from '../assets/earrings-heroimg.png'

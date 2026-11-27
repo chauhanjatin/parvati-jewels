@@ -4,7 +4,6 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
 const { prisma, withDbRetry, warmupDatabase, checkDbHealth } = require('./lib/prisma');
-const { pickStoneShape, STONE_SHAPES } = require('./lib/productSpecifications');
 const { verifySmtpOnStartup, sendInquiryEmails } = require('./lib/inquiryMail');
 const { warmupCache, getCategories, getProducts, getProductBySlug, invalidateCache } = require('./lib/catalogCache');
 
