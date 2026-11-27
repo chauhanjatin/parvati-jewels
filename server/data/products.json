@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Marquise Three Stone Ring",
     "slug": "pjr-506-marquise",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -70,7 +70,7 @@
   },
   {
     "id": 2,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Emerald Cut Three Stone Ring",
     "slug": "pjr-548-emerald",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -143,7 +143,7 @@
   },
   {
     "id": 3,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Three Stone Ring",
     "slug": "pjr-631-round-3stone",
     "category": "rings",
     "subCategory": "3-stone-ring",
@@ -216,7 +216,7 @@
   },
   {
     "id": 4,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "a145",
     "category": "rings",
     "subCategory": "art-deco",
@@ -242,7 +242,7 @@
     "specifications": {
       "stone_shape": "Cushion",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
@@ -265,7 +265,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
@@ -290,7 +290,7 @@
   },
   {
     "id": 5,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "grg-62",
     "category": "rings",
     "subCategory": "art-deco",
@@ -316,7 +316,7 @@
     "specifications": {
       "stone_shape": "Round",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -339,7 +339,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -364,7 +364,7 @@
   },
   {
     "id": 6,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-38-asscher",
     "category": "rings",
     "subCategory": "art-deco",
@@ -389,7 +389,7 @@
     "specifications": {
       "stone_shape": "Asscher",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -412,7 +412,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -437,7 +437,7 @@
   },
   {
     "id": 7,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-38-cushion",
     "category": "rings",
     "subCategory": "art-deco",
@@ -463,7 +463,7 @@
     "specifications": {
       "stone_shape": "Cushion",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -486,7 +486,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -511,7 +511,7 @@
   },
   {
     "id": 8,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-38-oval",
     "category": "rings",
     "subCategory": "art-deco",
@@ -537,7 +537,7 @@
     "specifications": {
       "stone_shape": "Oval",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -560,7 +560,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -585,7 +585,7 @@
   },
   {
     "id": 9,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-71-radiant-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -610,7 +610,7 @@
     "specifications": {
       "stone_shape": "Radiant",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -633,7 +633,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -658,7 +658,7 @@
   },
   {
     "id": 10,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-75-radiant",
     "category": "rings",
     "subCategory": "art-deco",
@@ -684,7 +684,7 @@
     "specifications": {
       "stone_shape": "Radiant",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -707,7 +707,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -732,7 +732,7 @@
   },
   {
     "id": 11,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-110-emerald-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -757,7 +757,7 @@
     "specifications": {
       "stone_shape": "Emerald",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -780,7 +780,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
@@ -805,7 +805,7 @@
   },
   {
     "id": 12,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-153-emerald",
     "category": "rings",
     "subCategory": "art-deco",
@@ -830,7 +830,7 @@
     "specifications": {
       "stone_shape": "Emerald",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -853,7 +853,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -878,7 +878,7 @@
   },
   {
     "id": 13,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Art Deco Ring",
     "slug": "pjr-513-oval-cs",
     "category": "rings",
     "subCategory": "art-deco",
@@ -903,7 +903,7 @@
     "specifications": {
       "stone_shape": "Oval",
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -926,7 +926,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "art deco ring",
+        "Product Name": "Art Deco Ring",
         "Category": "art deco ring",
         "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
@@ -951,7 +951,7 @@
   },
   {
     "id": 14,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Cushion Three Stone Ring",
     "slug": "pjr-314-pe-em-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1020,7 +1020,7 @@
   },
   {
     "id": 15,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Cushion Three Stone Ring",
     "slug": "pjr-315-mq-ov-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1089,7 +1089,7 @@
   },
   {
     "id": 16,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Cushion Three Stone Ring",
     "slug": "pjr-363-ov-pe-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1158,7 +1158,7 @@
   },
   {
     "id": 17,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Cushion Three Stone Ring",
     "slug": "pjr-371-ov-pe-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1227,7 +1227,7 @@
   },
   {
     "id": 18,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Emerald Three Stone Ring",
     "slug": "pjr-551-emerald-cs",
     "category": "rings",
     "subCategory": "color-stone-ring",
@@ -1321,7 +1321,7 @@
     "specifications": {
       "stone_shape": "Marquise",
       "productInformation": {
-        "Product Name": "Marquise Three Stone Ring",
+        "Product Name": "Bezel Solitaire Marquise Cut Diamond Ring",
         "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
@@ -1342,7 +1342,7 @@
     },
     "productDetails": {
       "productInformation": {
-        "Product Name": "Marquise Three Stone Ring",
+        "Product Name": "Bezel Solitaire Marquise Cut Diamond Ring",
         "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
@@ -1365,7 +1365,7 @@
   },
   {
     "id": 20,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-591-round",
     "category": "rings",
     "subCategory": "et",
@@ -1434,7 +1434,7 @@
   },
   {
     "id": 21,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-594-round",
     "category": "rings",
     "subCategory": "et",
@@ -1503,7 +1503,7 @@
   },
   {
     "id": 22,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-601-round-full",
     "category": "rings",
     "subCategory": "et",
@@ -1572,7 +1572,7 @@
   },
   {
     "id": 23,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-602-round-half",
     "category": "rings",
     "subCategory": "et",
@@ -1641,7 +1641,7 @@
   },
   {
     "id": 24,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-605-round-full-eternity",
     "category": "rings",
     "subCategory": "et",
@@ -1710,7 +1710,7 @@
   },
   {
     "id": 25,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-608-half",
     "category": "rings",
     "subCategory": "et",
@@ -1779,7 +1779,7 @@
   },
   {
     "id": 26,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-609-full",
     "category": "rings",
     "subCategory": "et",
@@ -1848,7 +1848,7 @@
   },
   {
     "id": 27,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-611-half",
     "category": "rings",
     "subCategory": "et",
@@ -1914,7 +1914,7 @@
   },
   {
     "id": 28,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-614-half",
     "category": "rings",
     "subCategory": "et",
@@ -1983,7 +1983,7 @@
   },
   {
     "id": 29,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-615-7stone",
     "category": "rings",
     "subCategory": "et",
@@ -2052,7 +2052,7 @@
   },
   {
     "id": 30,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-618-half",
     "category": "rings",
     "subCategory": "et",
@@ -2121,7 +2121,7 @@
   },
   {
     "id": 31,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Eternity Band Ring",
     "slug": "pjr-630-round-5stone",
     "category": "rings",
     "subCategory": "et",
@@ -2190,7 +2190,7 @@
   },
   {
     "id": 32,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Halo Ring",
     "slug": "grg-ov-23",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2260,7 +2260,7 @@
   },
   {
     "id": 33,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Emerald Halo Ring",
     "slug": "pjr-512-emerald",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": 34,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Halo Ring",
     "slug": "pjr-537-round",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2398,7 +2398,7 @@
   },
   {
     "id": 35,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Halo Ring",
     "slug": "pjr-540-oval",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2467,7 +2467,7 @@
   },
   {
     "id": 36,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Cushion Halo Ring",
     "slug": "pjr-579-cushion",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2536,7 +2536,7 @@
   },
   {
     "id": 37,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Halo Ring",
     "slug": "pjr-582-oval",
     "category": "rings",
     "subCategory": "halo-ring",
@@ -2605,7 +2605,7 @@
   },
   {
     "id": 38,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Emerald Solitaire Ring",
     "slug": "pjr-318-emerald",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2674,7 +2674,7 @@
   },
   {
     "id": 39,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Solitaire Ring",
     "slug": "pjr-318-oval",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2743,7 +2743,7 @@
   },
   {
     "id": 40,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Solitaire Ring",
     "slug": "pjr-501-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2812,7 +2812,7 @@
   },
   {
     "id": 41,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Solitaire Ring",
     "slug": "pjr-502-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2881,7 +2881,7 @@
   },
   {
     "id": 42,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Solitaire Ring",
     "slug": "pjr-504-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -2950,7 +2950,7 @@
   },
   {
     "id": 43,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Solitaire Ring",
     "slug": "pjr-505-round",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3019,7 +3019,7 @@
   },
   {
     "id": 44,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Pear Solitaire Ring",
     "slug": "pjr-519-pear",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3088,7 +3088,7 @@
   },
   {
     "id": 45,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Solitaire Ring",
     "slug": "pjr-538-oval",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3157,7 +3157,7 @@
   },
   {
     "id": 46,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Pear Solitaire Ring",
     "slug": "pjr-541-pear",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3226,7 +3226,7 @@
   },
   {
     "id": 47,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Princess Solitaire Ring",
     "slug": "pjr-556-princess",
     "category": "rings",
     "subCategory": "plain-solitaire-ring",
@@ -3295,7 +3295,7 @@
   },
   {
     "id": 48,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Marquise Side Stone Ring",
     "slug": "pjr-516-marquise",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3364,7 +3364,7 @@
   },
   {
     "id": 49,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Pear Side Stone Ring",
     "slug": "pjr-518-pear",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3433,7 +3433,7 @@
   },
   {
     "id": 50,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Emerald Side Stone Ring",
     "slug": "pjr-520-emerald",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3502,7 +3502,7 @@
   },
   {
     "id": 51,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Side Stone Ring",
     "slug": "pjr-536-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3572,7 +3572,7 @@
   },
   {
     "id": 52,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Side Stone Ring",
     "slug": "pjr-547-oval",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3641,7 +3641,7 @@
   },
   {
     "id": 53,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Oval Side Stone Ring",
     "slug": "pjr-584-oval",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3710,7 +3710,7 @@
   },
   {
     "id": 54,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Side Stone Ring",
     "slug": "pjr-628-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3779,7 +3779,7 @@
   },
   {
     "id": 55,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Round Side Stone Ring",
     "slug": "pjr-722-round",
     "category": "rings",
     "subCategory": "side-stone-ring",
@@ -3848,7 +3848,7 @@
   },
   {
     "id": 56,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Toi et Moi Ring",
     "slug": "pjr-363-pe-em",
     "category": "rings",
     "subCategory": "toi-moi-ring",
@@ -3917,7 +3917,7 @@
   },
   {
     "id": 57,
-    "name": "Bezel Solitaire Marquise Cut Diamond Ring",
+    "name": "Toi et Moi Ring",
     "slug": "pjr-371-pe-em",
     "category": "rings",
     "subCategory": "toi-moi-ring",

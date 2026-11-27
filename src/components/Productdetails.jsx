@@ -143,6 +143,11 @@ function Productdetails({ setInquiryState }) {
     ([k]) => !isExcludedKey(k)
   );
 
+  const productDisplayName =
+    productDetails?.productInformation?.["Product Name"] ||
+    productDetails?.productInformation?.["ProductName"] ||
+    product.name;
+
   const parentCategory = product.category?.parent;
   const currentCategory = parentCategory || product.category;
   const currentSubCategory = parentCategory ? product.category : null;
@@ -175,7 +180,7 @@ function Productdetails({ setInquiryState }) {
             </>
           )}
           <span className="mx-2 text-gray-300">|</span>
-          <span className="text-[#3D3D3D]">{product.name}</span>
+          <span className="text-[#3D3D3D]">{productDisplayName}</span>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -269,7 +274,7 @@ function Productdetails({ setInquiryState }) {
           >
             {/* Product Title */}
             <h1 className="text-[32px] md:text-[38px] xl:text-[36px] font-bellefair text-[#12798C] mb-1">
-              {product.name}
+              {productDisplayName}
             </h1>
             {(product.sku || product.slug) && (
               <p className="text-[13px] md:text-[14px] 2xl:text-[15px] text-gray-500 font-medium tracking-wider uppercase mb-4">

@@ -189,7 +189,9 @@ function Productlist() {
                       <div className="w-full h-[250px] bg-gray-100 flex items-center justify-center text-gray-400">No Image</div>
                     )}
                   </Link>
-                  <h3 className="text-center text-[16px] 2xl:text-[24px] text-[#1A1A1A] uppercase">{product.name}</h3>
+                  <h3 className="text-center text-[16px] 2xl:text-[24px] text-[#1A1A1A] uppercase">
+                    {product.productDetails?.productInformation?.['Product Name'] || product.name}
+                  </h3>
                   {product.subCategoryName && (
                     <p className="text-center text-[12px] text-[#0C758C] uppercase tracking-wider font-medium mt-1">
                       {product.subCategoryName}
