@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import CTA from "./CTA";
 import ScrollReveal from "./ScrollReveal";
+import { fetchJson } from "../lib/api";
+import { productImageUrl } from "../lib/productImage";
 import heroImg from "../assets/hero-img.png";
 import classyEarrings from "../assets/classy-earrings.png";
 import stuningRings from "../assets/stunning-rings.png";
@@ -28,8 +30,118 @@ import diamondEarring from "../assets/diamond-earring.png";
 import neckless from "../assets/neckless.png";
 import bestsellerTag from "../assets/bestsellers.png";
 
+const initialArtDecoProducts = [
+  {
+    id: 1565,
+    slug: "a145",
+    sku: "A145",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/A145/1 (1).png",
+  },
+  {
+    id: 1570,
+    slug: "pjr-71-radiant-cs",
+    sku: "PJR 71 Radiant CS",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-71-Radiant-CS/01.png",
+  },
+  {
+    id: 1566,
+    slug: "grg-62",
+    sku: "GRG-62",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/GRG-62/1.png",
+  },
+  {
+    id: 1567,
+    slug: "pjr-38-asscher",
+    sku: "PJR 38 Asscher",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Asscher/1.png",
+  },
+  {
+    id: 1568,
+    slug: "pjr-38-cushion",
+    sku: "PJR 38 Cushion",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Cushion/1.png",
+  },
+  {
+    id: 1569,
+    slug: "pjr-38-oval",
+    sku: "PJR 38 Oval",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Oval/1.png",
+  },
+  {
+    id: 1571,
+    slug: "pjr-75-radiant",
+    sku: "PJR 75 Radiant",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-75-Radiant/1.png",
+  },
+  {
+    id: 1572,
+    slug: "pjr-110-emerald-cs",
+    sku: "PJR 110 Emerald CS",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-110-Emerald-CS/01.png",
+  },
+  {
+    id: 1573,
+    slug: "pjr-153-emerald",
+    sku: "PJR 153 Emerald",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-153-Emerald/01.png",
+  },
+  {
+    id: 1574,
+    slug: "pjr-513-oval-cs",
+    sku: "PJR 513 Oval CS",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-513-Oval-CS/1.png",
+  },
+];
+
 function Home({ setInquiryState }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [artDecoProducts, setArtDecoProducts] = useState(initialArtDecoProducts);
+  const artDecoScrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  useEffect(() => {
+    fetchJson("/api/products?category=rings&subCategory=art-deco")
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          const sorted = [...data].sort((a, b) =>
+            a.slug === "a145" ? -1 : b.slug === "a145" ? 1 : 0
+          );
+          setArtDecoProducts(sorted);
+        }
+      })
+      .catch((err) =>
+        console.warn("Failed to load art deco products for home slider:", err)
+      );
+  }, []);
+
+  const updateArtDecoScrollState = () => {
+    if (artDecoScrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = artDecoScrollRef.current;
+      setCanScrollLeft(scrollLeft > 10);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  const handleArtDecoScroll = (direction) => {
+    if (artDecoScrollRef.current) {
+      const cardWidth = 340;
+      artDecoScrollRef.current.scrollBy({
+        left: direction === "next" ? cardWidth : -cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const carouselItems = [
     { id: 1, image: bracelet, title: "Bracelet", tag: false },
@@ -113,8 +225,155 @@ function Home({ setInquiryState }) {
         </div>
       </section>
 
+      {/* Our Beyond Ordinary Section (Art Deco Rings Slider) */}
+      <section className="w-full lg:pt-20 md:pt-16 pt-12 lg:pb-6 md:pb-4 pb-2 bg-white overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-8 xl:gap-12">
+            {/* Left Header & Actions */}
+            <ScrollReveal
+              animation="fade-right"
+              duration={800}
+              className="w-full lg:w-[240px] xl:w-[260px] 2xl:w-[280px] flex-shrink-0 flex flex-col items-start justify-center"
+            >
+              <h2 className="font-bellefair text-[34px] sm:text-[40px] md:text-[44px] xl:text-[48px] 2xl:text-[52px] leading-[1.05] text-[#0C758C] tracking-wide uppercase mb-6">
+                OUR
+                <br />
+                BEYOND
+                <br />
+                ORDINARY
+              </h2>
+              <div className="flex items-center gap-3">
+                <Link
+                  to="/category/rings?subCategory=art-deco"
+                  className="inline-block border border-black px-6 py-2.5 text-[12px] md:text-[13px] uppercase tracking-widest font-medium hover:bg-[#0C758C] hover:border-[#0C758C] hover:text-white transition-all"
+                >
+                  View All
+                </Link>
+                <div className="flex items-center gap-1.5 ml-1">
+                  <button
+                    type="button"
+                    onClick={() => handleArtDecoScroll("prev")}
+                    disabled={!canScrollLeft}
+                    aria-label="Previous items"
+                    className={`w-9 h-9 border border-gray-300 flex items-center justify-center transition-colors ${
+                      !canScrollLeft
+                        ? "opacity-35 cursor-not-allowed text-gray-300"
+                        : "hover:border-[#0C758C] hover:text-[#0C758C] cursor-pointer text-gray-700"
+                    }`}
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.8}
+                        d="M15 19l-7-7 7-7"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleArtDecoScroll("next")}
+                    disabled={!canScrollRight}
+                    aria-label="Next items"
+                    className={`w-9 h-9 border border-gray-300 flex items-center justify-center transition-colors ${
+                      !canScrollRight
+                        ? "opacity-35 cursor-not-allowed text-gray-300"
+                        : "hover:border-[#0C758C] hover:text-[#0C758C] cursor-pointer text-gray-700"
+                    }`}
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.8}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Right Slider */}
+            <ScrollReveal
+              animation="fade-left"
+              duration={800}
+              delay={150}
+              className="flex-1 min-w-0 overflow-hidden"
+            >
+              <div
+                ref={artDecoScrollRef}
+                onScroll={updateArtDecoScrollState}
+                className="flex gap-5 xl:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 pt-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+              >
+                {artDecoProducts.map((item, index) => {
+                  const imgUrl = productImageUrl(
+                    item.primaryImage || item.image
+                  );
+                  const displayName =
+                    item.productDetails?.productInformation?.["Product Name"] ||
+                    item.name ||
+                    "Art Deco Ring";
+
+                  return (
+                    <div
+                      key={item.id || item.slug || index}
+                      className="flex-none w-[270px] sm:w-[290px] md:w-[310px] xl:w-[330px] snap-start flex flex-col"
+                    >
+                      <span className="text-[12px] md:text-[13px] text-gray-500 font-light block mb-2">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <Link
+                        to={`/products/${item.slug}`}
+                        state={{ category: "rings" }}
+                        className="block overflow-hidden bg-gray-50 aspect-[4/3] group relative"
+                      >
+                        {imgUrl ? (
+                          <img
+                            src={imgUrl}
+                            alt={displayName}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-100 text-sm">
+                            No Image
+                          </div>
+                        )}
+                      </Link>
+                      <Link
+                        to={`/products/${item.slug}`}
+                        state={{ category: "rings" }}
+                        className="mt-3 block"
+                      >
+                        <h3 className="text-[#0C758C] text-[15px] md:text-[16px] font-medium leading-snug line-clamp-2 hover:text-black transition-colors">
+                          {displayName}
+                        </h3>
+                      </Link>
+                      <p className="text-[12px] md:text-[13px] text-gray-500 font-normal mt-0.5">
+                        Ring
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Shop By Category Section */}
-      <section className="w-full lg:mt-24 md:mt-18 mt-12 bg-white">
+      <section className="w-full lg:mt-16 md:mt-14 mt-10 bg-white">
         <div className="container mx-auto px-6 flex flex-col items-center">
           <ScrollReveal animation="fade-up" delay={0}>
             <h2 className="font-bellefair text-[#0C758C] text-[26px] md:text-[40px] xl:text-[48px] mb-2 text-center uppercase">
