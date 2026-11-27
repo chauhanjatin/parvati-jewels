@@ -6589,10 +6589,11 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/GBG-RD-26/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/GBG-RD-26/2.png",
+      "/assets/dummy-data/bracelet/GBG-RD-26/3.png",
+      "/assets/dummy-data/bracelet/GBG-RD-26/4.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -6654,10 +6655,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-21-Mix-Bug-Round/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-21-Mix-Bug-Round/2.png",
+      "/assets/dummy-data/bracelet/PJBR-21-Mix-Bug-Round/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -6719,10 +6720,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-201-Emerald/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-201-Emerald/2.png",
+      "/assets/dummy-data/bracelet/PJBR-201-Emerald/3.png"
     ],
     "specifications": {
       "stone_shape": "Emerald",
@@ -6784,10 +6785,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-202-Emerald/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-202-Emerald/2.png",
+      "/assets/dummy-data/bracelet/PJBR-202-Emerald/3.png"
     ],
     "specifications": {
       "stone_shape": "Emerald",
@@ -6849,10 +6850,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-203-Oval/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-203-Oval/2.png",
+      "/assets/dummy-data/bracelet/PJBR-203-Oval/3.png"
     ],
     "specifications": {
       "stone_shape": "Oval",
@@ -6914,10 +6915,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-204-Marquise/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-204-Marquise/2.png",
+      "/assets/dummy-data/bracelet/PJBR-204-Marquise/3.png"
     ],
     "specifications": {
       "stone_shape": "Marquise",
@@ -6979,10 +6980,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-205-Mix-Oval-Round/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-205-Mix-Oval-Round/2.png",
+      "/assets/dummy-data/bracelet/PJBR-205-Mix-Oval-Round/3.png"
     ],
     "specifications": {
       "stone_shape": "Oval",
@@ -7044,10 +7045,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-206-Round/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-206-Round/2.png",
+      "/assets/dummy-data/bracelet/PJBR-206-Round/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7109,10 +7110,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-207-Mix-OV-MQ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-207-Mix-OV-MQ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-207-Mix-OV-MQ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7174,10 +7175,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-208-Mix-PE-MQ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-208-Mix-PE-MQ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-208-Mix-PE-MQ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7239,10 +7240,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-209-Mix-EM-RD/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-209-Mix-EM-RD/2.png",
+      "/assets/dummy-data/bracelet/PJBR-209-Mix-EM-RD/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7304,10 +7305,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-210-Mix-PE-RD/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-210-Mix-PE-RD/2.png",
+      "/assets/dummy-data/bracelet/PJBR-210-Mix-PE-RD/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7369,10 +7370,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-211-Oval/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-211-Oval/2.png",
+      "/assets/dummy-data/bracelet/PJBR-211-Oval/3.png"
     ],
     "specifications": {
       "stone_shape": "Oval",
@@ -7434,10 +7435,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-212-Pear/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-212-Pear/2.png",
+      "/assets/dummy-data/bracelet/PJBR-212-Pear/3.png"
     ],
     "specifications": {
       "stone_shape": "Pear",
@@ -7499,10 +7500,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-500-Round-(CROWN)/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-500-Round-(CROWN)/2.png",
+      "/assets/dummy-data/bracelet/PJBR-500-Round-(CROWN)/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7564,10 +7565,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-501-Round/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-501-Round/2.png",
+      "/assets/dummy-data/bracelet/PJBR-501-Round/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7629,10 +7630,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-Across-EM-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-Across-EM-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-Across-EM-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7694,10 +7695,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-Across-OV-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-Across-OV-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-Across-OV-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7759,10 +7760,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-EM-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-EM-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-EM-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7824,10 +7825,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-OV-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-OV-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-OV-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7889,10 +7890,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-PE-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-PE-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-PE-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -7954,10 +7955,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-506-RD-BZ/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-506-RD-BZ/2.png",
+      "/assets/dummy-data/bracelet/PJBR-506-RD-BZ/3.png"
     ],
     "specifications": {
       "stone_shape": "Round",
@@ -8019,10 +8020,10 @@
     "reviewCount": 0,
     "size": "",
     "stock": 21,
-    "image": "../assets/dummy-data/bracelet1.webp",
+    "image": "/assets/dummy-data/bracelet/PJBR-508-Pear/1.png",
     "additionalImages": [
-      "../assets/dummy-data/bracelet2.webp",
-      "../assets/dummy-data/bracelet3.webp"
+      "/assets/dummy-data/bracelet/PJBR-508-Pear/2.png",
+      "/assets/dummy-data/bracelet/PJBR-508-Pear/3.png"
     ],
     "specifications": {
       "stone_shape": "Pear",

@@ -32,13 +32,6 @@ import bestsellerTag from "../assets/bestsellers.png";
 
 const initialArtDecoProducts = [
   {
-    id: 1565,
-    slug: "a145",
-    sku: "A145",
-    name: "Art Deco Ring",
-    primaryImage: "/assets/dummy-data/ring/ART-DECO/A145/1 (1).png",
-  },
-  {
     id: 1570,
     slug: "pjr-71-radiant-cs",
     sku: "PJR 71 Radiant CS",
@@ -46,32 +39,11 @@ const initialArtDecoProducts = [
     primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-71-Radiant-CS/01.png",
   },
   {
-    id: 1566,
+    id: 1568,
     slug: "grg-62",
     sku: "GRG-62",
     name: "Art Deco Ring",
     primaryImage: "/assets/dummy-data/ring/ART-DECO/GRG-62/1.png",
-  },
-  {
-    id: 1567,
-    slug: "pjr-38-asscher",
-    sku: "PJR 38 Asscher",
-    name: "Art Deco Ring",
-    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Asscher/1.png",
-  },
-  {
-    id: 1568,
-    slug: "pjr-38-cushion",
-    sku: "PJR 38 Cushion",
-    name: "Art Deco Ring",
-    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Cushion/1.png",
-  },
-  {
-    id: 1569,
-    slug: "pjr-38-oval",
-    sku: "PJR 38 Oval",
-    name: "Art Deco Ring",
-    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Oval/1.png",
   },
   {
     id: 1571,
@@ -79,6 +51,27 @@ const initialArtDecoProducts = [
     sku: "PJR 75 Radiant",
     name: "Art Deco Ring",
     primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-75-Radiant/1.png",
+  },
+  {
+    id: 1569,
+    slug: "pjr-38-cushion",
+    sku: "PJR 38 Cushion",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Cushion/1.png",
+  },
+  {
+    id: 1565,
+    slug: "a145",
+    sku: "A145",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/A145/1 (1).png",
+  },
+  {
+    id: 1567,
+    slug: "pjr-38-asscher",
+    sku: "PJR 38 Asscher",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Asscher/1.png",
   },
   {
     id: 1572,
@@ -96,6 +89,13 @@ const initialArtDecoProducts = [
   },
   {
     id: 1574,
+    slug: "pjr-38-oval",
+    sku: "PJR 38 Oval",
+    name: "Art Deco Ring",
+    primaryImage: "/assets/dummy-data/ring/ART-DECO/PJR-38-Oval/1.png",
+  },
+  {
+    id: 1575,
     slug: "pjr-513-oval-cs",
     sku: "PJR 513 Oval CS",
     name: "Art Deco Ring",
@@ -105,43 +105,32 @@ const initialArtDecoProducts = [
 
 function Home({ setInquiryState }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [artDecoProducts, setArtDecoProducts] = useState(initialArtDecoProducts);
-  const artDecoScrollRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [artDecoProducts, setArtDecoProducts] = useState(
+    initialArtDecoProducts,
+  );
 
+  // Fetch updated product data if available, preserving the curated order
   useEffect(() => {
     fetchJson("/api/products?category=rings&subCategory=art-deco")
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
-          const sorted = [...data].sort((a, b) =>
-            a.slug === "a145" ? -1 : b.slug === "a145" ? 1 : 0
-          );
-          setArtDecoProducts(sorted);
+          const merged = initialArtDecoProducts.map((initial) => {
+            const found = data.find((d) => d.slug === initial.slug);
+            return found
+              ? {
+                  ...initial,
+                  ...found,
+                  primaryImage: initial.primaryImage || found.primaryImage,
+                }
+              : initial;
+          });
+          setArtDecoProducts(merged);
         }
       })
       .catch((err) =>
-        console.warn("Failed to load art deco products for home slider:", err)
+        console.warn("Failed to load art deco products for home section:", err),
       );
   }, []);
-
-  const updateArtDecoScrollState = () => {
-    if (artDecoScrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = artDecoScrollRef.current;
-      setCanScrollLeft(scrollLeft > 10);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
-    }
-  };
-
-  const handleArtDecoScroll = (direction) => {
-    if (artDecoScrollRef.current) {
-      const cardWidth = 340;
-      artDecoScrollRef.current.scrollBy({
-        left: direction === "next" ? cardWidth : -cardWidth,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const carouselItems = [
     { id: 1, image: bracelet, title: "Bracelet", tag: false },
@@ -225,149 +214,125 @@ function Home({ setInquiryState }) {
         </div>
       </section>
 
-      {/* Our Beyond Ordinary Section (Art Deco Rings Slider) */}
-      <section className="w-full lg:pt-20 md:pt-16 pt-12 lg:pb-6 md:pb-4 pb-2 bg-white overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-8 xl:gap-12">
-            {/* Left Header & Actions */}
-            <ScrollReveal
-              animation="fade-right"
-              duration={800}
-              className="w-full lg:w-[240px] xl:w-[260px] 2xl:w-[280px] flex-shrink-0 flex flex-col items-start justify-center"
-            >
-              <h2 className="font-bellefair text-[34px] sm:text-[40px] md:text-[44px] xl:text-[48px] 2xl:text-[52px] leading-[1.05] text-[#0C758C] tracking-wide uppercase mb-6">
-                OUR
-                <br />
-                BEYOND
-                <br />
-                ORDINARY
-              </h2>
-              <div className="flex items-center gap-3">
-                <Link
-                  to="/category/rings?subCategory=art-deco"
-                  className="inline-block border border-black px-6 py-2.5 text-[12px] md:text-[13px] uppercase tracking-widest font-medium hover:bg-[#0C758C] hover:border-[#0C758C] hover:text-white transition-all"
+      {/* Our Beyond Ordinary Section (3 cards per line, 2 lines = 6 cards) */}
+      <section className="w-full lg:pt-20 md:pt-16 pt-12 lg:pb-16 md:pb-12 pb-8 bg-white">
+        <div className="container mx-auto px-6 max-w-[1240px] flex flex-col items-center">
+          {/* Centered Title */}
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-bellefair text-[#0C758C] text-[30px] sm:text-[38px] md:text-[44px] xl:text-[48px] uppercase tracking-wider text-center mb-2 sm:mb-2 lg:mb-2">
+              OUR BEYOND ORDINARY
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal animation="fade-up" delay={100}>
+            <p className="text-[#1A1A1A] text-[12px] md:text-[15px] xl:text-[20px] xl:mb-14 mb-12">
+            A Shape for Every Love Story
+            </p>
+          </ScrollReveal>
+
+          {/* 6 Cards Grid: 3 cards per line, 2 lines */}
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            {artDecoProducts.slice(0, 6).map((item, index) => {
+              const imgUrl = productImageUrl(
+                item.primaryImage || item.image,
+              );
+              const displayName =
+                item.productDetails?.productInformation?.["Product Name"] ||
+                item.name ||
+                "Art Deco Ring";
+
+              return (
+                <ScrollReveal
+                  key={item.id || item.slug || index}
+                  animation="fade-up"
+                  delay={(index % 3) * 120}
+                  className="flex flex-col"
                 >
-                  View All
-                </Link>
-                <div className="flex items-center gap-1.5 ml-1">
-                  <button
-                    type="button"
-                    onClick={() => handleArtDecoScroll("prev")}
-                    disabled={!canScrollLeft}
-                    aria-label="Previous items"
-                    className={`w-9 h-9 border border-gray-300 flex items-center justify-center transition-colors ${
-                      !canScrollLeft
-                        ? "opacity-35 cursor-not-allowed text-gray-300"
-                        : "hover:border-[#0C758C] hover:text-[#0C758C] cursor-pointer text-gray-700"
-                    }`}
+                  
+                  <Link
+                    to={`/products/${item.slug}`}
+                    state={{ category: "rings" }}
+                    className="block overflow-hidden bg-gray-50 aspect-[5/4.5] group relative shadow-sm hover:shadow-md transition-shadow"
                   >
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.8}
-                        d="M15 19l-7-7 7-7"
+                    {imgUrl ? (
+                      <img
+                        src={imgUrl}
+                        alt={displayName}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
                       />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => handleArtDecoScroll("next")}
-                    disabled={!canScrollRight}
-                    aria-label="Next items"
-                    className={`w-9 h-9 border border-gray-300 flex items-center justify-center transition-colors ${
-                      !canScrollRight
-                        ? "opacity-35 cursor-not-allowed text-gray-300"
-                        : "hover:border-[#0C758C] hover:text-[#0C758C] cursor-pointer text-gray-700"
-                    }`}
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-100 text-sm">
+                        No Image
+                      </div>
+                    )}
+                  </Link>
+                  <Link
+                    to={`/products/${item.slug}`}
+                    state={{ category: "rings" }}
+                    className="mt-3 block"
                   >
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.8}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </ScrollReveal>
+                    <h3 className="text-[#0C758C] text-[15px] md:text-[17px] font-medium leading-snug line-clamp-1 hover:text-black transition-colors">
+                      {displayName}
+                    </h3>
+                  </Link>
+                  <p className="text-[13px] md:text-[14px] text-gray-500 font-normal mt-0.5">
+                    Ring
+                  </p>
+                </ScrollReveal>
+              );
+            })}
+          </div>
 
-            {/* Right Slider */}
-            <ScrollReveal
-              animation="fade-left"
-              duration={800}
-              delay={150}
-              className="flex-1 min-w-0 overflow-hidden"
+          {/* Bottom View All Button */}
+          <ScrollReveal animation="fade-up" delay={200} className="mt-10 sm:mt-12 lg:mt-14 text-center">
+            <Link
+              to="/category/rings?subCategory=art-deco"
+              className="inline-block border border-black px-8 py-2.5 text-[13px] md:text-[14px] tracking-wider font-normal text-black hover:bg-[#0C758C] hover:border-[#0C758C] hover:text-white transition-all uppercase"
             >
-              <div
-                ref={artDecoScrollRef}
-                onScroll={updateArtDecoScrollState}
-                className="flex gap-5 xl:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 pt-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
-              >
-                {artDecoProducts.map((item, index) => {
-                  const imgUrl = productImageUrl(
-                    item.primaryImage || item.image
-                  );
-                  const displayName =
-                    item.productDetails?.productInformation?.["Product Name"] ||
-                    item.name ||
-                    "Art Deco Ring";
+              View All
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
 
-                  return (
-                    <div
-                      key={item.id || item.slug || index}
-                      className="flex-none w-[270px] sm:w-[290px] md:w-[310px] xl:w-[330px] snap-start flex flex-col"
-                    >
-                      <span className="text-[12px] md:text-[13px] text-gray-500 font-light block mb-2">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <Link
-                        to={`/products/${item.slug}`}
-                        state={{ category: "rings" }}
-                        className="block overflow-hidden bg-gray-50 aspect-[4/3] group relative"
-                      >
-                        {imgUrl ? (
-                          <img
-                            src={imgUrl}
-                            alt={displayName}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            loading="lazy"
-                          />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-100 text-sm">
-                            No Image
-                          </div>
-                        )}
-                      </Link>
-                      <Link
-                        to={`/products/${item.slug}`}
-                        state={{ category: "rings" }}
-                        className="mt-3 block"
-                      >
-                        <h3 className="text-[#0C758C] text-[15px] md:text-[16px] font-medium leading-snug line-clamp-2 hover:text-black transition-colors">
-                          {displayName}
-                        </h3>
-                      </Link>
-                      <p className="text-[12px] md:text-[13px] text-gray-500 font-normal mt-0.5">
-                        Ring
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </ScrollReveal>
+         {/* Explore Diamonds */}
+         <section className="bg-[#FFF8EF] lg:mt-24 mt-20 xl:py-[100px] lg:py-[50px] md:py-[40px] py-[20px]">
+        <div className="container mx-auto px-6 text-center">
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-bellefair text-[#1A1A1A] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
+              Explore Diamonds
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal animation="fade-up" delay={100}>
+            <p className="text-[#1A1A1A] text-[12px] md:text-[15px] xl:text-[20px] xl:mb-14 mb-12">
+              Shop Diamonds by Shape
+            </p>
+          </ScrollReveal>
+
+          <div className="flex justify-around flex-wrap gap-y-8 lg:gap-y-6">
+            {diamonds.map((diamond) => (
+              <ScrollReveal
+                key={diamond.name}
+                animation="fade-up"
+                delay={100}
+                className="w-1/2 md:w-1/3 lg:w-auto"
+              >
+                <Link
+                  to={`/diamonds?shape=${diamond.name}`}
+                  className="group flex flex-col items-center gap-5 xl:gap-6 cursor-pointer relative transition-transform duration-300 ease-out hover:-translate-y-2 hover:scale-110 hover:z-10"
+                >
+                  <img
+                    src={diamond.icon}
+                    alt={diamond.name}
+                    className="drop-shadow-sm transition-all duration-300 group-hover:drop-shadow-md"
+                  />
+
+                  <p className="text-[#1A1A1A] text-[15px] xl:text-[20px] transition-colors duration-300 group-hover:text-[#0C758C]">
+                    {diamond.name}
+                  </p>
+                </Link>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
@@ -514,46 +479,7 @@ function Home({ setInquiryState }) {
         </div>
       </section>
 
-      {/* Explore Diamonds */}
-      <section className="bg-[#FFF8EF] lg:mt-24 mt-20 xl:py-[100px] lg:py-[50px] md:py-[40px] py-[20px]">
-        <div className="container mx-auto px-6 text-center">
-          <ScrollReveal animation="fade-up">
-            <h2 className="font-bellefair text-[#1A1A1A] text-[26px] md:text-[40px] xl:text-[48px] mb-2 uppercase">
-              Explore Diamonds
-            </h2>
-          </ScrollReveal>
-          <ScrollReveal animation="fade-up" delay={100}>
-            <p className="text-[#1A1A1A] text-[12px] md:text-[15px] xl:text-[20px] xl:mb-14 mb-12">
-              Shop Diamonds by Shape
-            </p>
-          </ScrollReveal>
-
-          <div className="flex justify-around flex-wrap gap-y-8 lg:gap-y-6">
-            {diamonds.map((diamond) => (
-              <ScrollReveal
-                key={diamond.name}
-                animation="fade-up"
-                delay={100}
-                className="flex flex-col items-center gap-5 xl:gap-6 hover:-translate-y-2 hover:scale-110 transition-all duration-500 ease-out cursor-pointer w-1/2 md:w-1/3 lg:w-auto"
-              >
-                <Link
-                  to={`/diamonds?shape=${diamond.name}`}
-                  className="flex flex-col items-center gap-5 xl:gap-6"
-                >
-                  <img
-                    src={diamond.icon}
-                    alt={diamond.name}
-                    className="drop-shadow-sm hover:drop-shadow-md transition-all duration-500"
-                  />
-                  <p className="text-[#1A1A1A] text-[15px] xl:text-[20px]">
-                    {diamond.name}
-                  </p>
-                </Link>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+   
 
       {/* Most Popular */}
       <section className="xl:mt-24 lg:mt-16 md:mt-14 mt-10 w-full overflow-hidden">
