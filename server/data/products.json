@@ -26,6 +26,8 @@
     "specifications": {
       "stone_shape": "Marquise",
       "productInformation": {
+        "Product Name": "Marquise Three Stone Ring",
+        "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
         "Main Stone": "Marquise Diamond",
@@ -45,6 +47,8 @@
     },
     "productDetails": {
       "productInformation": {
+        "Product Name": "Marquise Three Stone Ring",
+        "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
         "Main Stone": "Marquise Diamond",
@@ -91,18 +95,22 @@
     "specifications": {
       "stone_shape": "Emerald",
       "productInformation": {
+        "Product Name": "Emerald Cut Three Stone Ring",
+        "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Baguette Diamonds",
+        "Main Stone": "Emerald Cut Diamond",
+        "Side Stones": "Trapezoid Cut Diamonds",
         "Setting Type": "Prong Setting",
         "Ring Style": "Three Stone",
-        "Band Width": "2.0MM",
-        "Band Thickness": "1.6MM",
+        "Band Style": "Plain Band",
+        "Band Width": "2.20mm",
+        "Band Thickness": "1.60mm",
+        "Head Type": "Three Stone Basket Setting",
         "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.7CT",
+        "Total Weight": "APPROX. 1.15CT",
         "Setting": "Prong Setting",
         "Color": "DE",
         "Clarity": "VVS/VS"
@@ -110,18 +118,22 @@
     },
     "productDetails": {
       "productInformation": {
+        "Product Name": "Emerald Cut Three Stone Ring",
+        "Category": "Engagement Ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Baguette Diamonds",
+        "Main Stone": "Emerald Cut Diamond",
+        "Side Stones": "Trapezoid Cut Diamonds",
         "Setting Type": "Prong Setting",
         "Ring Style": "Three Stone",
-        "Band Width": "2.0MM",
-        "Band Thickness": "1.6MM",
+        "Band Style": "Plain Band",
+        "Band Width": "2.20mm",
+        "Band Thickness": "1.60mm",
+        "Head Type": "Three Stone Basket Setting",
         "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.7CT",
+        "Total Weight": "APPROX. 1.15CT",
         "Setting": "Prong Setting",
         "Color": "DE",
         "Clarity": "VVS/VS"
@@ -156,18 +168,22 @@
     "specifications": {
       "stone_shape": "Round",
       "productInformation": {
+        "Product Name": "Round Three Stone Ring",
+        "Category": "Three-Stone",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
         "Main Stone": "Round Diamond",
-        "Side Stones": "Baguette Diamonds",
+        "Side Stones": "Round Diamonds",
         "Setting Type": "Prong Setting",
-        "Ring Style": "Three Stone",
-        "Band Width": "2.0MM",
-        "Band Thickness": "1.6MM",
+        "Ring Style": "Three-Stone",
+        "Band Style": "Cathedral plain Shank",
+        "Band Width": "2.20mm",
+        "Band Thickness": "1.60mm",
+        "Head Type": "Three Stone Basket Setting",
         "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.7CT",
+        "Total Weight": "APPROX. 0.75CT",
         "Setting": "Prong Setting",
         "Color": "DE",
         "Clarity": "VVS/VS"
@@ -175,18 +191,22 @@
     },
     "productDetails": {
       "productInformation": {
+        "Product Name": "Round Three Stone Ring",
+        "Category": "Three-Stone",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
         "Main Stone": "Round Diamond",
-        "Side Stones": "Baguette Diamonds",
+        "Side Stones": "Round Diamonds",
         "Setting Type": "Prong Setting",
-        "Ring Style": "Three Stone",
-        "Band Width": "2.0MM",
-        "Band Thickness": "1.6MM",
+        "Ring Style": "Three-Stone",
+        "Band Style": "Cathedral plain Shank",
+        "Band Width": "2.20mm",
+        "Band Thickness": "1.60mm",
+        "Head Type": "Three Stone Basket Setting",
         "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.7CT",
+        "Total Weight": "APPROX. 0.75CT",
         "Setting": "Prong Setting",
         "Color": "DE",
         "Clarity": "VVS/VS"
@@ -220,42 +240,50 @@
       "/assets/dummy-data/ring/ART-DECO/A145/4.png"
     ],
     "specifications": {
-      "stone_shape": "Round",
+      "stone_shape": "Cushion",
       "productInformation": {
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Round Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "cushion Diamond",
+        "Side Stones": "Round Diamonds",
+        "Setting Type": "Prong Setting/ pave setting",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "3.5mm",
+        "Band Thickness": "2.0mm",
+        "Head Type": "Basket Setting",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 11.385CT",
+        "Setting": "Prong Setting/Basket Setting",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
         "Metal Colour": "Yellow Gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Round Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "cushion Diamond",
+        "Side Stones": "Round Diamonds",
+        "Setting Type": "Prong Setting/ pave setting",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "3.5mm",
+        "Band Thickness": "2.0mm",
+        "Head Type": "Basket Setting",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 11.385CT",
+        "Setting": "Prong Setting/Basket Setting",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "A145"
@@ -288,40 +316,48 @@
     "specifications": {
       "stone_shape": "Round",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Round Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "Round Diamonds",
+        "Side Stones": "Round Diamonds",
+        "Setting Type": "Prong Setting/ pave setting",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.8mm",
+        "Head Type": "Under cut Setting",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 0.42CT",
+        "Setting": "Under cut Setting",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Round Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "Round Diamonds",
+        "Side Stones": "Round Diamonds",
+        "Setting Type": "Prong Setting/ pave setting",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.8mm",
+        "Head Type": "Under cut Setting",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 0.42CT",
+        "Setting": "Under cut Setting",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "GRG-62"
@@ -353,40 +389,48 @@
     "specifications": {
       "stone_shape": "Asscher",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Asscher Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "asscher Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.58CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Asscher Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "asscher Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.58CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 38 Asscher"
@@ -419,40 +463,48 @@
     "specifications": {
       "stone_shape": "Cushion",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Cushion Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "cushion Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.58CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Cushion Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "cushion Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.58CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 38 Cushion"
@@ -485,40 +537,48 @@
     "specifications": {
       "stone_shape": "Oval",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Oval Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "oval Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.37CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Oval Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "oval Diamonds",
+        "Side Stones": "tapper baguette",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.37CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 38 Oval"
@@ -550,40 +610,48 @@
     "specifications": {
       "stone_shape": "Radiant",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Radiant Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "radiant Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 5.31CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Radiant Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "radiant Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 5.31CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 71 Radiant CS"
@@ -616,40 +684,48 @@
     "specifications": {
       "stone_shape": "Radiant",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Radiant Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "radiant Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 4.01CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Radiant Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "radiant Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 4.01CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 75 Radiant"
@@ -681,40 +757,48 @@
     "specifications": {
       "stone_shape": "Emerald",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "emerald Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "3.0mm",
+        "Band Thickness": "1.7mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.01CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow/ white two tone",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "emerald Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "3.0mm",
+        "Band Thickness": "1.7mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 3.01CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 110 Emerald CS"
@@ -746,40 +830,48 @@
     "specifications": {
       "stone_shape": "Emerald",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "emerald Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.96CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Emerald Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "emerald Diamonds",
+        "Side Stones": "tapper baguette / trapezoid",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.0mm",
+        "Band Thickness": "1.5mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.96CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 153 Emerald"
@@ -811,40 +903,48 @@
     "specifications": {
       "stone_shape": "Oval",
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Oval Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "oval Diamonds",
+        "Side Stones": "tapper baguette / princess",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.7mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.02CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "productDetails": {
       "productInformation": {
-        "Metal Colour": "Yellow Gold",
+        "Product Name": "art deco ring",
+        "Category": "art deco ring",
+        "Metal Colour": "yellow gold",
         "Metal Purity": "14KT / 18KT",
-        "Main Stone": "Oval Diamond",
-        "Side Stones": "Milgrain Baguettes",
-        "Setting Type": "Vintage Bezel & Prong",
-        "Ring Style": "Art Deco Vintage",
-        "Band Width": "2.2MM",
-        "Band Thickness": "1.6MM",
-        "Finish": "High Polish Milgrain"
+        "Main Stone": "oval Diamonds",
+        "Side Stones": "tapper baguette / princess",
+        "Setting Type": "channel Setting/bezel",
+        "Ring Style": "art deco ring",
+        "Band Style": "plain Shank",
+        "Band Width": "2.5mm",
+        "Band Thickness": "1.7mm",
+        "Head Type": "channel Setting/bezel",
+        "Finish": "High Polish"
       },
       "accentStones": {
-        "Total Weight": "APPROX. 0.45CT",
-        "Setting": "Castle",
-        "Color": "G",
-        "Clarity": "VS"
+        "Total Weight": "APPROX. 2.02CT",
+        "Setting": "channel Setting/bezel",
+        "Color": "DE",
+        "Clarity": "VVS/VS"
       }
     },
     "sku": "PJR 513 Oval CS"
